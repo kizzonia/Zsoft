@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(params.require(:blog).permit(:title, :sub_title, :body, :link, :category_id))
+    @blog = Blog.new(params.require(:blog).permit(:title, :sub_title, :body, :link, :category_id, :thumbnail))
 
     if @blog.save
       redirect_to @blog
@@ -35,7 +35,7 @@ class BlogsController < ApplicationController
 
   def update
     @blog = Blog.find(params[:id])
-    if @blog.update(params[:blog].permit(:title, :sub_title, :body, :link, :category_id))
+    if @blog.update(params[:blog].permit(:title, :sub_title, :body, :link, :category_id, :thumbnail))
     end
   end
 
@@ -48,7 +48,7 @@ class BlogsController < ApplicationController
 
     private
       def blog_params
-        params.require(:blog).permit(:title, :sub_title, :body, :link, :category_id)
+        params.require(:blog).permit(:title, :sub_title, :body, :link, :category_id, :thumbnail)
       end
 
 end

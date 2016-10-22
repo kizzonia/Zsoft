@@ -30,7 +30,7 @@
 
             </div>
             <div class="single-post-image">
-              <img src="img/blog-large.jpg" alt="Post Title">
+              <<%= image_tag @blog.thumbnail.url(:medium) %>
             </div>
             <div class="single-post-content">
               <h3><%= @blog.sub_title %></h3>

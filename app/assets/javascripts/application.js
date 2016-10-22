@@ -13,6 +13,7 @@
 //= require jquery
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require ckeditor/init
 //= require jquery_ujs
 //= require jquery.fancybox-media
 //= require jquery.fancybox.pack
