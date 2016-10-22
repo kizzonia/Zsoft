@@ -26,7 +26,8 @@
               <h3><%= @blog.title %></h3>
             </div>
             <div class="single-post-info">
-              <i class="glyphicon glyphicon-time"></i><%= blog.created_at.strftime("%b, %d, %y") %><a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
+              <i class="glyphicon glyphicon-time"></i><%= blog.created_at.strftime("%b, %d, %y") %>
+
             </div>
             <div class="single-post-image">
               <img src="img/blog-large.jpg" alt="Post Title">
@@ -91,27 +92,9 @@
     </div>
     </div>
 
+<div class=" container text-center" %>
+  <p>
+<%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-common" %> |
 
-
-<p>
-  <strong>Title:</strong>
-
+<%= link_to 'Back', blogs_path, class: "btn btn-border" %>
 </p>
-
-<p>
-  <strong>Sub title:</strong>
-  <%= @blog.sub_title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
-
-<p>
-  <strong>Link:</strong>
-  <%= @blog.link %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
