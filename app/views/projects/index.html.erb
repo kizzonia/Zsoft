@@ -1,28 +1,47 @@
-<p id="notice"><%= notice %></p>
+<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>PORTFOLIO & Projects</h1>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<h1>Listing Projects</h1>
+        <div class="section">
+	    	<div class="container">
+				<div class="row">
+          <% @projects.each do |project| %>
+					<div class="col-sm-6">
+						<div class="portfolio-item">
+							<div class="portfolio-image">
+								<a href="page-portfolio-item.html"><%= image_tag project.thumbnail.url(:medium) %> </a>
+							</div>
+							<div class="portfolio-info-fade">
+								<ul>
+									<li class="portfolio-project-name"><%= project.name %></li>
+									<li><%= project.description %></li>
+									<li><%= project.history %></li>
+									<li class="read-more"><%= link_to 'Show', project, class: "btn" %></li>
+                  <li><%= link_to 'Edit', edit_project_path(project) %></li>
+              <li>  <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>History</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+              <% end %>
+						</div>
+					</div>
+        </div>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.name %></td>
-        <td><%= project.description %></td>
-        <td><%= project.history %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+
+
+
+
+
+
+
   </tbody>
 </table>
 
