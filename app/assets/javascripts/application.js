@@ -28,5 +28,7 @@
 //= require custom
 //= require smooth-scroll
 //= require_tree
+//= require jquery.fancybox-media
+//= require jquery.fancybox.pack
 //= require wow
 //= require owl.carousel
