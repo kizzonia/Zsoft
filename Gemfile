@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'paperclip'
 gem 'bootstrap'
-gem 'bootstrap-sass', '~> 3.3.6'
+
 
 gem 'ckeditor'
 gem "font-awesome-rails"
