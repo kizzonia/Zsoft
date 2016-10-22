@@ -29,7 +29,7 @@
 					<%= @project.description %>
 						<ul class="no-list-style">
 							<li><%= @project.history %></li>
-							<li><b>Date:</b> 01, September 2012 - 23, February 2013</li>
+							<li><b>Date:</b> <%= project.created_at.strftime("%b, %d, %y") %></li>
 							<li><b>Technologies:</b> HTML5, CSS3, jQuery, Ruby, MySQL, Rails, Ajax JavaScript </li>
 						</ul>
 					</div>

@@ -1,8 +1,101 @@
 <p id="notice"><%= notice %></p>
 
+
+
+<div class="section section-breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <h1>
+              <%= @category.name %>
+          </h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="section">
+      <div class="container">
+      <div class="row">
+        <!-- Blog Post -->
+        <div class="col-sm-8">
+          <div class="blog-post blog-single-post">
+            <div class="single-post-title">
+              <h3><%= @blog.title %></h3>
+            </div>
+            <div class="single-post-info">
+              <i class="glyphicon glyphicon-time"></i><%= blog.created_at.strftime("%b, %d, %y") %><a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
+            </div>
+            <div class="single-post-image">
+              <img src="img/blog-large.jpg" alt="Post Title">
+            </div>
+            <div class="single-post-content">
+              <h3><%= @blog.sub_title %></h3>
+              <%= @blog.body %>
+            </div>
+            <!-- Comments -->
+            <div class="post-coments">
+              <h4><%= @blog.comments.count %></h4>
+            <%= render @blog.comment %>
+              <!-- Pagination
+              <div class="pagination-wrapper ">
+                <ul class="pagination pagination-sm">
+                  <li class="disabled"><a href="#">Previous</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+              <!-- Comments Form -->
+              <h4>Leave a Comment</h4>
+              <div class="comment-form-wrapper">
+                 <%= render "comments/form" %>
+              </div>
+              <!-- End Comment Form -->
+            </div>
+            <!-- End Comments -->
+          </div>
+        </div>
+        <!-- End Blog Post -->
+        <!-- Sidebar -->
+        <div class="col-sm-4 blog-sidebar">
+          <h4>Search our Blog</h4>
+          <form>
+            <div class="input-group">
+              <input class="form-control input-md" id="appendedInputButtons" type="text">
+              <span class="input-group-btn">
+                <button class="btn btn-md" type="button">Search</button>
+              </span>
+            </div>
+          </form>
+
+          <h4>Categories</h4>
+          <ul class="blog-categories">
+            <li>
+              <% Category.all.each do |category| %>
+                <%= link_to category.name, blogs_path(category: category.name) %>
+
+                <% end %>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- End Sidebar -->
+      </div>
+    </div>
+    </div>
+
+
+
 <p>
   <strong>Title:</strong>
-  <%= @blog.title %>
+
 </p>
 
 <p>
