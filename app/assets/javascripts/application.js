@@ -14,6 +14,8 @@
 //= require bootstrap.min
 //= require ckeditor/init
 //= require jquery_ujs
+//= require bootstrap
+//= require bootstrap-sprockets
 //= require jquery.fancybox-media
 //= require jquery.fancybox.pack
 //= require jquery.quicksand
