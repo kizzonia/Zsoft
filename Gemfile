@@ -24,7 +24,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'paperclip'
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap'
+gem 'bootstrap-sass', '~> 3.3.6'
+
 gem 'ckeditor'
 gem "font-awesome-rails"
 
