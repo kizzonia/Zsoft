@@ -11,6 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap
+//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery.fancybox-media
+//= require jquery.fancybox.pack
+//= require jquery.quicksand
+
+//= require main
 //= require turbolinks
+//= require m2
+//= require jquery.mixitup
+//= require jquery.nav
+//= require custom
+//= require smooth-scroll
 //= require_tree .
+//= require wow
+//= require owl.carousel
