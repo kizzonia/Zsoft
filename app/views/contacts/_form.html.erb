@@ -1,13 +1,21 @@
-<%= simple_form_for(@contact) do |f| %>
+<%= simple_form_for(@contact), :html => {:class => "form-horizontal center"} do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :email %>
+  <div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+      <div class="controls">
+        <%= f.input :name %>
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="controls">
+        <%= f.input :email %>
+        <i class="fa fa-envelope-o"></i>
+      </div>
+
+  </div>
+  <div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-delay="0.2s">
     <%= f.input :body %>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div class="col-sm-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+      <%= f.button :submit, class: "btn btn-common" %>
   </div>
 <% end %>
