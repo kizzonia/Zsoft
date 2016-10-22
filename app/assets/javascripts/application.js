@@ -11,8 +11,7 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap
-//= require bootstrap-sprockets
+//= require bootstrap.min
 //= require ckeditor/init
 //= require jquery_ujs
 //= require jquery.fancybox-media
@@ -26,6 +25,6 @@
 //= require jquery.nav
 //= require custom
 //= require smooth-scroll
-//= require_tree .
+//= require_tree
 //= require wow
 //= require owl.carousel
