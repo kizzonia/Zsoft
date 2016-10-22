@@ -1,33 +1,50 @@
-<p id="notice"><%= notice %></p>
+<div class="section section-breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1class="section-title" ><span>Zongo</span>Blog</h1>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h1>Listing Blogs</h1>
+    <!-- Posts List -->
+    <div class="section blog-posts-wrapper">
+    <div class="container">
+    <div class="row">
+      <!-- Post -->
+      <% @blogs.each do |blog| %>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+      <div class="col-md-4 col-sm-6">
+        <div class="blog-post">
+          <!-- Post Info -->
+          <div class="post-info">
+            <div class="post-date">
+              <div class="date"><%= blog.created_at.strftime("%b, %d, %y") %></div>
+            </div>
+            <div class="post-comments-count">
+              <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
+            </div>
+          </div>
+          <!-- End Post Info -->
+          <!-- Post Image -->
+        <%= image_tag "blog2.jpg", class: "post-image" %>
+          <!-- End Post Image -->
+          <!-- Post Title & Summary -->
+          <div class="post-title">
+            <h4><%= link_to blog.title, blog %></h4>
+          </div>
+          <div class="post-summary">
+          <%= raw(blog.sub_title) %>
+          </div>
+          <!-- End Post Title & Summary -->
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Sub title</th>
-      <th>Body</th>
-      <th>Link</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      </div>
 
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.sub_title %></td>
-        <td><%= blog.body %></td>
-        <td><%= blog.link %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  </div>
+      <% end %>
 
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
+  </div>
+  </div>
+  <!-- End Posts List -->
