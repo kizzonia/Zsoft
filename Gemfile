@@ -32,7 +32,8 @@ gem "font-awesome-rails"
 
 gem 'devise', '~> 3.5.7'
 #gem 'puma'
-
+gem 'puma'
+gem "pg"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -52,8 +53,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 group :production do
-#gem 'puma'
-gem "pg"
+
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
