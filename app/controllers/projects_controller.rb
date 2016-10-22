@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all.order("DESC")
+    @projects = Project.all.order('created_at DESC ')
   end
 
   # GET /projects/1

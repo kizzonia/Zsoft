@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :models
   resources :contacts
   mount Ckeditor::Engine => '/ckeditor'
   resources :projects
