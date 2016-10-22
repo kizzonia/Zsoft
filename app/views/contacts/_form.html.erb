@@ -1,4 +1,4 @@
-<%= simple_form_for(@contact) do |f| %>
+<%= simple_form_for(@contact, url: contacts_path, html: { class: 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
   <div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">

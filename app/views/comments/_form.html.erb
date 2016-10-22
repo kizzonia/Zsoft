@@ -1,4 +1,4 @@
-<%= simple_form_for ( [@blog, @blog.comments.build] ), :html => {:class => "form-horizontal center"} do |f|  %>
+<%= simple_form_for ( [@blog, @blog.comments.build], :html => {:class => "form-horizontal center"} ) do |f|  %>
 	<div class="controls">
 		 <%= f.input :name %><span><i class="glyphicon glyphicon-user"></i></span>
    </div>

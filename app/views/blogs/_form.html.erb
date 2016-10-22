@@ -1,4 +1,4 @@
-<%= simple_form_for(@blog), :html => {:class => "form-horizontal center"} do |f| %>
+<%= simple_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
