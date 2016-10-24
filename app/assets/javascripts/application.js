@@ -14,17 +14,16 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require ckeditor/init
+//= require turbolinks
 //= require jquery.fancybox-media
 //= require jquery.fancybox.pack
 //= require jquery.quicksand
-
-//= require custom
-//= require turbolinks
-//= require smooth-scroll
-//= require main
-//= require ckeditor/init
 //= require_tree .
-//= require ckeditor/init
+//= require jquery
 //= require bootstrap.min
 //= require jquery.mixitup
 //= require jquery.nav
+//= require custom
+//= require smooth-scroll
+//= require main
