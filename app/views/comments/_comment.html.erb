@@ -2,17 +2,17 @@
   <ul class="post-comments">
     <li>
       <div class="comment-wrapper">
-        	<div class="comment-author"><img src="img/user1.jpg" alt="User Name"> <%= comment.name %></div>
+        	<div class="comment-author"><%= comment.name %></div>
           <%= comment.body %>
         <!-- Comment Controls -->
         <div class="comment-actions">
           <span class="comment-date">  <%= time_ago_in_words(comment.created_at) %> Ago</span>
-         
+
         		<hr>
-        		<% if user_signed_in? %>
-        			<p><%= link_to 'Delete', [comment.post, comment],method: :delete, class: "btn btn-xs btn-default", data: { confirm: 'Are you sure?' }  %>
+
+        			<p><%= link_to 'Delete', [comment.blog, comment],method: :delete, class: "btn btn-xs btn-default", data: { confirm: 'Are you sure?' }  %>
         			</p>
-        			<% end %>
+
         </div>
       </div>
     </li>

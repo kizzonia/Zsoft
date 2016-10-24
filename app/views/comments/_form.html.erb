@@ -1,13 +1,12 @@
-<%= simple_form_for ( [@blog, @blog.comments.build], :html => {:class => "form-horizontal center"} ) do |f|  %>
+<%= simple_form_for ([@blog, @blog.comments.build(params[:blog_id])]) do |f|  %>
 	<div class="controls">
-		 <%= f.input :name %><span><i class="glyphicon glyphicon-user"></i></span>
-   </div>
+		 <%= f.input :name %>
 
    <div class="controls">
-     <%= f.input :body, placeholder: "Please type your comments", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16 %><span><i class="glyphicon glyphicon-comment"></i></span>
+     <%= f.input :body, placeholder: "Please type your comments", :rows => 16, :cols => 16 %>
    </div>
 
 <div class="controls">
-  <%= f.submit :submit, class: "btn btn-large pull-right" %>
+  <%= f.submit :submit, class: "btn btn-border " %>
 </div>
           <% end %>

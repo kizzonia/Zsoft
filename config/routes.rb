@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   resources :projects
   resources :categories
-  resources :blogs
+    resources :blogs do
+        resources :comments
+      end
+
   root "welcome#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

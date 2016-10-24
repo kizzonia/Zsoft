@@ -24,23 +24,23 @@
               <div class="date"><%= blog.created_at.strftime("%b, %d, %y") %></div>
             </div>
             <div class="post-comments-count">
-            <i class="glyphicon glyphicon-comment icon-white"></i><%= @blog.comments.count %>
+            <i class="glyphicon glyphicon-comment icon-white"></i><%= blog.comments.count %>
             </div>
           </div>
           <!-- End Post Info -->
           <!-- Post Image -->
-        <%= image_tag blog.thumbnail.ur(:medium), class: "post-image" %>
+        <%= image_tag blog.thumbnail.url(:medium), class: "post-image" %>
           <!-- End Post Image -->
           <!-- Post Title & Summary -->
           <div class="post-title">
-            <h4><%= link_to blog.title, blog %></h4>
+            <h4><%= raw(blog.title) %></h4>
           </div>
           <div class="post-summary">
           <%= raw(blog.sub_title) %>
           </div>
           <!-- End Post Title & Summary -->
           <div class="post-more">
-        								<%= link_to "Read more", blog, class: "btn btn-common" %> 
+        								<%= link_to "Read more", blog, class: "btn btn-common" %>
         							</div>
       </div>
 

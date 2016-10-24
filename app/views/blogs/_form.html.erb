@@ -1,3 +1,7 @@
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
 <%= simple_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -30,3 +34,7 @@
     <%= f.submit :submit, class: 'btn btn-border'%>
   </div>
 <% end %>
+</div>
+</div>
+</div>
+</section>

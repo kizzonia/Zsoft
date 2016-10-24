@@ -6,11 +6,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-
-          <h1>
-              <%= @category.name %>
-          </h1>
-
         </div>
       </div>
     </div>
@@ -23,35 +18,35 @@
         <div class="col-sm-8">
           <div class="blog-post blog-single-post">
             <div class="single-post-title">
-              <h3><%= @blog.title %></h3>
+              <h3><%= raw(@blog.title) %></h3>
             </div>
             <div class="single-post-info">
-              <i class="glyphicon glyphicon-time"></i><%= blog.created_at.strftime("%b, %d, %y") %>
+              <i class="glyphicon glyphicon-time"></i><%= @blog.created_at.strftime("%b, %d, %y") %>
 
             </div>
             <div class="single-post-image">
-              <<%= image_tag @blog.thumbnail.url(:medium) %>
+              <<%= image_tag @blog.thumbnail.url(:large) %>
             </div>
             <div class="single-post-content">
-              <h3><%= @blog.sub_title %></h3>
-              <%= @blog.body %>
+              <h3><%= raw(@blog.sub_title) %></h3>
+              <%= raw(@blog.body) %>
             </div>
             <!-- Comments -->
             <div class="post-coments">
-              <h4><%= @blog.comments.count %></h4>
-            <%= render @blog.comment %>
-              <!-- Pagination
-              <div class="pagination-wrapper ">
-                <ul class="pagination pagination-sm">
-                  <li class="disabled"><a href="#">Previous</a></li>
-                  <li class="active"><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">Next</a></li>
-                </ul>
-              </div>
+                <h4><%= @blog.comments.count %></h4>
+                    <%= render @blog.comments %>
+                            <!-- Pagination
+                            <div class="pagination-wrapper ">
+                              <ul class="pagination pagination-sm">
+                                <li class="disabled"><a href="#">Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">Next</a></li>
+                              </ul>
+                            </div>
               <!-- Comments Form -->
               <h4>Leave a Comment</h4>
               <div class="comment-form-wrapper">
@@ -62,6 +57,7 @@
             <!-- End Comments -->
           </div>
         </div>
+      </div>
         <!-- End Blog Post -->
         <!-- Sidebar -->
         <div class="col-sm-4 blog-sidebar">
@@ -77,24 +73,26 @@
 
           <h4>Categories</h4>
           <ul class="blog-categories">
+          <% Category.all.each do |category| %>
             <li>
-              <% Category.all.each do |category| %>
+
                 <%= link_to category.name, blogs_path(category: category.name) %>
 
-                <% end %>
-            </li>
 
+            </li>
+                <% end %>
           </ul>
 
-        </div>
+    </div>
         <!-- End Sidebar -->
       </div>
     </div>
     </div>
 
-<div class=" container text-center" %>
+<div class=" container text-center" >
   <p>
 <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-common" %> |
 
 <%= link_to 'Back', blogs_path, class: "btn btn-border" %>
 </p>
+</div>

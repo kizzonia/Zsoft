@@ -30,9 +30,7 @@ a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-a:hover {
-  color: #ffffff;
-}
+
 a:focus {
   outline: none;
 }
@@ -93,15 +91,15 @@ img {
   background: #0BAFA0;
 }
 .btn-common:hover {
-  background: #585858;
+  background: #fff;
 }
 #header .main-navigation {
   background: #ffffff;
   border-bottom: 2px solid #0BAFA0;
 }
 #header .navbar-brand img{
-  width: 250px;
-  height: 40px;
+  width: 150px;
+  height: 60px;
   padding-bottom: 12px;
 }
 #header .nav {
@@ -141,7 +139,7 @@ img {
 #header .nav li a:focus {
   background: none;
   opacity: 1;
-  color: #0BAFA0;
+  color: #fff;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   transform: translateY(0px);
@@ -159,8 +157,8 @@ img {
   padding: 12px;
 }
 #header .affix .navbar-brand img {
-  width: 250px;
-  height: 40px;
+  width: 150px;
+  height: 60px;
 }
 #header .affix .nav {
   margin-top: 12px;
@@ -1082,6 +1080,17 @@ ul.portfolio-categ li.active a:hover, ul.portfolio-categ li a:hover,ul.portfolio
   color: #ffffff;
   padding-bottom: 16px;
 }
+#connected1 .contact-item a i {
+  font-size: 30px;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+#connected1 .contact-item h5 {
+  color: #FDF2F0;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 #connected .contact-item h5 {
   color: #FDF2F0;
   font-weight: 300;
@@ -1203,7 +1212,7 @@ a {
   color: #3498db;
 }
 a:hover {
-  color: #3498db;
+  color: #fff;
 }
 .btn-border {
   border: 2px solid #3498db;
@@ -1215,9 +1224,14 @@ a:hover {
 .btn-common {
   background: #3498db;
 }
-.btn-common:hover {
-  background: #585858;
+a:visited {
+  color: #fff;
 }
+
+a:hover {
+  color: #fff;
+}
+
 .section-title{
 	color: #3498db;
 }

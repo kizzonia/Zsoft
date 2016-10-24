@@ -1,21 +1,35 @@
-<%= simple_form_for(@contact, url: contacts_path, html: { class: 'form-horizontal' }) do |f| %>
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Contact</span> Us</h1>
+      <div class="col-lg-8">
+
+
+<%= simple_form_for(@contact, url: contacts_path) do |f| %>
   <%= f.error_notification %>
 
-  <div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+
       <div class="controls">
-        <%= f.input :name %>
-        <i class="fa fa-user"></i>
+        <%= f.input :name  %>
+
       </div>
       <div class="controls">
         <%= f.input :email %>
-        <i class="fa fa-envelope-o"></i>
       </div>
 
   </div>
-  <div class="col-sm-6 col-md-6 wow fadeInRight" data-wow-delay="0.2s">
-    <%= f.input :body %>
+  <div class="controls col-md-8 ">
+    <%= f.input :body, placeholder: "tell us about it ", :rows => 16, :cols => 8 %>
   </div>
-  <div class="col-sm-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-      <%= f.button :submit, class: "btn btn-common" %>
+
+  <div class=" controls col-md-8 ">
+      <%= f.submit :submit, class: "btn btn-common" %>
   </div>
 <% end %>
+
+
+
+					</div>
+				</div>
+			</div>
+		</section>

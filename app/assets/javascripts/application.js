@@ -9,10 +9,10 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+
 //= require jquery
-//= require bootstrap.min
-//= require ckeditor/init
+//= require bootstrap
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
@@ -20,15 +20,19 @@
 //= require jquery.fancybox.pack
 //= require jquery.quicksand
 
-//= require main
+//= require custom
 //= require turbolinks
-//= require m2
+//= require bootstrap
+//= require bootstrap-sprockets
+//= require turbolinks
+
+//= require smooth-scroll
+
+//= require custom
+//= require main
+//= require ckeditor/init
+//= require_tree .
+
+
 //= require jquery.mixitup
 //= require jquery.nav
-//= require custom
-//= require smooth-scroll
-//= require_tree
-//= require jquery.fancybox-media
-//= require jquery.fancybox.pack
-//= require wow
-//= require owl.carousel
