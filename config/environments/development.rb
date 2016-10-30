@@ -5,16 +5,12 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
-  config.paperclip_defaults = {
-    storage: :s3,
-    s3_credentials: {
-      bucket: ENV.fetch('picszongo'),
-      access_key_id: ENV.fetch('AKIAI6K7KR36YLLYTVUA'),
-      secret_access_key: ENV.fetch('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
-'),
-      s3_region: ENV.fetch('US_Standard'),
-    }
-  }
+  :storage => :s3,
+  :bucket => (Rails.env.development? ? S3_CONFIG["picszongo"] : ENV['picszongo']),
+  :s3_credentials => {
+    :access_key_id => (Rails.env.development? ? S3_CONFIG['AKIAI6K7KR36YLLYTVUA'] : ENV['AKIAI6K7KR36YLLYTVUA']),
+    :secret_access_key => (Rails.env.development? ? S3_CONFIG['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'] : ENV['keT7LG4H/YNz7YXwLjS2jlsKT5cYECDtwNA480xR'])
+  },
     #
   # Do not eager load code on boot.
   config.eager_load = false
