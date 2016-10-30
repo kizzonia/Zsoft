@@ -10,6 +10,45 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+.btn {
+  cursor: pointer;
+  padding: 10px 16px;
+  display: inline-block;
+  margin: 10px 20px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-border {
+  border: 2px solid #0BAFA0;
+  color: #0BAFA0;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.btn-border:hover,
+.btn-border:active {
+  color: #ffffff;
+  background: #0BAFA0;
+}
+
+.btn-border {
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+.btn-border:hover {
+  background: #3498db;
+}
+.btn-common {
+  background: #3498db;
+}
+.btn-common:hover {
+  background: #585858;
+}
+
 h1,
 h2,
 h3,
@@ -63,36 +102,7 @@ img {
   float: left;
   display: none;
 }
-.btn {
-  cursor: pointer;
-  padding: 10px 16px;
-  display: inline-block;
-  margin: 10px 20px;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.btn-border {
-  border: 2px solid #0BAFA0;
-  color: #0BAFA0;
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
-}
-.btn-border:hover,
-.btn-border:active {
-  color: #ffffff;
-  background: #0BAFA0;
-}
-.btn-common {
-  background: #0BAFA0;
-}
-.btn-common:hover {
-  background: #fff;
-}
+
 #header .main-navigation {
   background: #ffffff;
   border-bottom: 2px solid #0BAFA0;
@@ -168,6 +178,37 @@ img {
     border-radius: 0;
 
 }
+#Section-1 {
+	background-color:#4ba2dc;
+}
+#Section-1:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background-image:url(http://unsplash.it/1600/1400?random=1);
+	width:100%;
+	height:100%;
+	opacity:0.05;
+	 -webkit-background-size:cover !Important;
+	-moz-background-size:cover !Important;
+	-o-background-size:cover !Important;
+	background-size:cover !Important;
+}
+
+.boxservice {
+	width:33.33%;
+		float:left;
+	text-align:center;
+	border-left:1px solid rgba(255,255,255,0.3);
+	border-top:1px solid rgba(255,255,255,0.3);
+	padding:35px 25px;
+}
+.boxservice:hover {background:rgba(255,255,255,0.2);}
+.boxservice i {
+	font-size:4em;
+	margin:0 0 0.1em 0;
 
 .dropdown-menu li:last-child  {
 	padding-bottom: 15 !important;
@@ -1214,16 +1255,7 @@ a {
 a:hover {
   color: #fff;
 }
-.btn-border {
-  border: 2px solid #3498db;
-  color: #3498db;
-}
-.btn-border:hover {
-  background: #3498db;
-}
-.btn-common {
-  background: #3498db;
-}
+.
 a:visited {
   color: #fff;
 }

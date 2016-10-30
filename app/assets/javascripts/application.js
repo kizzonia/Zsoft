@@ -16,22 +16,12 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
-//= require jquery.fancybox-media
-//= require jquery.fancybox.pack
-//= require jquery.quicksand
-//= require jquery
-
+//= require wow
 //= require turbolinks
 //= require m2
 //= require jquery.mixitup
 //= require jquery.nav
 //= require custom
-//= require smooth-scroll
 //= require_tree .
-
 //= require custom
-//= require smooth-scroll
-//= require jquery.fancybox-media
-//= require jquery.fancybox.pack
-//= require wow
-//= require owl.carousel
+//= require jquery-smooth-scroll

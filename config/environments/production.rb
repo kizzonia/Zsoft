@@ -19,7 +19,15 @@ ActionMailer::Base.smtp_settings = {
   config.assets.digest = true
   config.log_level = :debug
 
-
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: ENV.fetch('picszongo'),
+      access_key_id: ENV.fetch('AKIAI6K7KR36YLLYTVUA'),
+      secret_access_key: ENV.fetch('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'),
+      s3_region: ENV.fetch('US Standard'),
+    }
+  }
     # Compress JavaScripts and CSS.
 
     config.assets.compile = true
