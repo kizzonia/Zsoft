@@ -26,5 +26,15 @@ module Zongosoft
      config.serve_static_assets = true
      config.assets.precompile += %w(*.js)
     config.active_record.raise_in_transactional_callbacks = true
+    config.paperclip_defaults = {
+      storage: :s3,
+      s3_credentials: {
+        bucket: ENV.fetch('picszongo'),
+        access_key_id: ENV.fetch('AKIAI6K7KR36YLLYTVUA'),
+        secret_access_key: ENV.fetch('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
+  '),
+        s3_region: ENV.fetch('US_Standard'),
+      }
+    }
   end
 end
