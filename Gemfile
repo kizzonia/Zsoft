@@ -40,8 +40,8 @@ gem 'ckeditor'
 gem "font-awesome-rails"
 gem 'aws-sdk', '~> 2.3'
 gem 'devise', '~> 3.5.7'
-gem 'puma'
 #gem 'puma'
+gem 'puma'
 gem "pg"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
