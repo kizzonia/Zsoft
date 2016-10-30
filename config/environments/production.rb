@@ -24,8 +24,9 @@ ActionMailer::Base.smtp_settings = {
     s3_credentials: {
       bucket: ENV.fetch('picszongo'),
       access_key_id: ENV.fetch('AKIAI6K7KR36YLLYTVUA'),
-      secret_access_key: ENV.fetch('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'),
-      s3_region: ENV.fetch('US Standard'),
+      secret_access_key: ENV.fetch('keT7LG4H/YNz7YXwLjS2jlsKT5cYECDtwNA480xR
+'),
+      s3_region: ENV.fetch('US_Standard'),
     }
   }
     # Compress JavaScripts and CSS.
