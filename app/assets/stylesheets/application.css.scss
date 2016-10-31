@@ -14,13 +14,7 @@
  *= require_tree .
  *= require_self
  */
- a:visited {
-   color: #fff;
- }
 
- a:hover {
-   color: #fff;
- }
  @import "jquery.fancybox";
  @import "animate";
  @import "bootstrap";
@@ -29,11 +23,3 @@
 @import "style";
 @import "normalize";
 @import "jquery.fancybox";
-
-a:visited {
-  color: #fff;
-}
-
-a:hover {
-  color: #fff;
-}
