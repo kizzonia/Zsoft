@@ -182,7 +182,7 @@ img {
 	background-color:#4ba2dc;
 }
 #Section-1:after {
-	
+
 	display:block;
 	position:absolute;
 	top:0;
@@ -205,11 +205,13 @@ img {
 	border-top:1px solid rgba(255,255,255,0.3);
 	padding:35px 25px;
 }
-.boxservice:hover {background:rgba(255,255,255,0.2);}
+.boxservice:hover {
+  background:rgba(255,255,255,0.2);
+}
 .boxservice i {
 	font-size:4em;
 	margin:0 0 0.1em 0;
-
+}
 .dropdown-menu li:last-child  {
 	padding-bottom: 15 !important;
 	margin-bottom: 15;
