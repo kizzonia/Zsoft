@@ -181,21 +181,7 @@ img {
 #Section-1 {
 	background-color:#4ba2dc;
 }
-#Section-1:after {
 
-	display:block;
-	position:absolute;
-	top:0;
-	left:0;
-	background-image:url(http://unsplash.it/1600/1400?random=1);
-	width:100%;
-	height:100%;
-	opacity:0.05;
-	 -webkit-background-size:cover !Important;
-	-moz-background-size:cover !Important;
-	-o-background-size:cover !Important;
-	background-size:cover !Important;
-}
 
 .boxservice {
 	width:33.33%;
@@ -1257,7 +1243,7 @@ a {
 a:hover {
   color: #fff;
 }
-.
+
 a:visited {
   color: #fff;
 }
