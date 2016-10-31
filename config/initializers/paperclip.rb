@@ -1,4 +1,4 @@
-Paperclip.setup do |config|
+
 # config/initializers/paperclip.rb
    # only use Amazon S2 on production servers
    unless Rails.env.development?
@@ -7,6 +7,5 @@ Paperclip.setup do |config|
      Paperclip::Attachment.default_options[:s3_host_name] = 's3.amazonaws.com'
 
    # # config/initializers/paperclip.rb
-   # Paperclip::Attachment.default_options[:s3_host_name] = 's3-us-west-2.amazonaws.com'
+    Paperclip::Attachment.default_options[:s3_host_name] = 's3-us-west-2.amazonaws.com'
    end
-end
