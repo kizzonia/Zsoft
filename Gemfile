@@ -38,7 +38,7 @@ group :assets do
 end
 gem 'ckeditor'
 gem "font-awesome-rails"
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.35'
 gem 'aws-sdk-v1', '~> 1.66'
 gem 'devise', '~> 3.5.7'
 #gem 'puma'
