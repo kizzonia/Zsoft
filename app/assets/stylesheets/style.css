@@ -182,7 +182,7 @@ img {
 	background-color:#4ba2dc;
 }
 #Section-1:after {
-	content:"";
+	
 	display:block;
 	position:absolute;
 	top:0;
