@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  
+
   def index
     if params[:category].blank?
     @blogs = Blog.all.order('created_at DESC ')
@@ -20,6 +20,7 @@ class BlogsController < ApplicationController
   end
 
   def create
+    s3 = Aws::S3::Resource.new(region: 'us-west-2')
     @blog = Blog.new(params.require(:blog).permit(:title, :sub_title, :body, :link, :category_id, :thumbnail))
 
     if @blog.save
