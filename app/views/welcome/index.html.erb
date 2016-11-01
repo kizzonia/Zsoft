@@ -17,7 +17,7 @@
 		<section id="feature">
 	    <div class="container">
 	      <div class="row">
-	        <div class="col-md-12 col-md-6 ">
+	        <div class="text-center">
 	          <div class="title-area">
 	            <h2 class="section-title text-center ">Features</h2>
 	            <span class="line"></span>
@@ -76,12 +76,23 @@
 	    </div>
 	  </section>
 	  <!-- End Feature -->
-		<!-- Start Services Section -->
 
-		<!-- End Services Section-->
+		<!-- video post --->
 
-<!--start editing-->
-		<!-- Start Portfolio Section -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-6">
+					<div class="post-video">
+						<div class="post-heading">
+						<h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Take A</span> Peek</h1>
+						</div>
+						<div class="video-container">
+							<%= video_tag "z.mp4", :controls => true, :type => "video/mp4" %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Start Why chose us Section -->
 		<section id="why-chose">
@@ -168,35 +179,14 @@
 		<br>
 		<!-- End Why chose us Section  -->
 
-		<!-- video post --->
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-6">
-					<div class="post-video">
-						<div class="post-heading">
-						<h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Take A</span> Peek</h1>
-						</div>
-						<div class="video-container">
-							<%= video_tag "z.mp4", :controls => true, :type => "video/mp4" %>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- End Testimonial Section -->
 		<!-- Start About Us Section -->
 		<section id="about" class="about-section">
 			<div class="container">
 			<h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>About</span> Us</h1>
 				<div class="row">
 							<div class="col-sm-6 col-md-6 wow fadeInLeft" data-wow-offset="10">
-
 									<div class="col-md-6  img-responsive">
 										<%= image_tag "JR.jpg" %>
-
 									<div class="info">
 										<h4>JR A Agbortoko</h4>
 										<p>CEO/IT Expert</p>
@@ -207,27 +197,24 @@
 								<p>JR A Agbortoko always had the determination to be great at what he does with a deep passion to making the world and his society a better place, he also committed his time and resources in the young and talented youths to empower them and develop their untapped skills . With his level of devotion and commitment towards making his society and the world a better he has been able to create build efficient business and interpersonal professional relationship and also impact his society greatly.
 									</p>
 								</div>
-							</div>
-						</div>
 
-						<div class="item">
 							<div class="col-sm-6 col-md-6">
-								<div class="side-left">
 									<div class="col-md-4 img-responsive">
 									<%= image_tag "FJ.jpeg" %>
-								</div>
+
 									<div class="info">
 										<h4>Fortune J Chibike</h4>
 										<h5>IT Expert & Web developer </h5>
 									</div>
 								</div>
-							</div>
+									</div>
 							<div class="col-sm-6 col-md-6">
-								<div class="side-right">
 									<p>
 								Hi, Am Fortune J , A front-end and back-end developer and designer, with  the lastest technologies making suff for the web is a whole lot fun and beautiful, creativity and experimentations are my thing and with a drop of passion and love, mized with some potent skills, HURRAY!! we have a perfect elixer for the Job, Wanna try ........................................................?</div>
+							</div>
 				</div>
 			</div>
+		</div>
 		</section>
 		<!-- End About Us Section -->
 
