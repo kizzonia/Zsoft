@@ -725,8 +725,8 @@ img {
   color: inset 0 1px #fff,0 0 8px #5b7a9b;
 }
 .blog-post img {
-  max-width: 60%;
-  height: 400px;
+  max-width:80%;
+
 
 }
 .blog-post .post-info {
@@ -848,8 +848,8 @@ img {
   margin-bottom: 10px;
 }
 .comment-author img {
-  max-width: 40px;
-  height: 400px;
+  max-width: 50px;
+
   -webkit-border-radius: 25px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 25px;
@@ -896,15 +896,15 @@ img {
 .blog-sidebar .recent-posts li,
 .blog-sidebar .blog-categories li {
   padding: 5px 20px 5px 0;
-  border-top: 1px solid #D5D5D5;
+  border-top: 1px solid #3498db;
 }
 .blog-sidebar .recent-posts li:last-child,
 .blog-sidebar .blog-categories li:last-child {
-  border-bottom: 1px solid #D5D5D5;
+  border-bottom: 1px solid #3498db;
 }
 .blog-sidebar .recent-posts a,
 .blog-sidebar .blog-categories a {
-  color: #527191;
+  color: #3498db;
 }
 
 .dropdown-toggle:hover,
