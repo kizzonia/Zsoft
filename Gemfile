@@ -31,8 +31,11 @@ gem 'nifty-attachments', '~> 1.0', '>= 1.0.4'
 gem 'momentjs-rails'
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'wow-rails'
 
+group :assets do
+  #gem 'jquery-smooth-scroll-rails'
+  gem 'wow-rails'
+end
 gem 'ckeditor'
 gem "font-awesome-rails"
 gem 'aws-sdk', '< 2.0'

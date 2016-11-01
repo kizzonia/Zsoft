@@ -18,7 +18,7 @@ h4,
 h5,
 h6 {
 font-family: 'Josefin Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 100;
 }
 a {
   color:#3498db;
@@ -37,6 +37,9 @@ a {
 a:active {
   color:#3498db;
 }
+a:hover {
+  color: #527191
+}
 .btn {
   cursor: pointer;
   padding: 10px 16px;
@@ -47,6 +50,10 @@ a:active {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #527191;
+  color:#527191;
 }
 .btn-border {
   border: 2px solid #3498db;
@@ -201,9 +208,9 @@ img {
 }
 
 .login {
-  border-left: 1px solid #e4e4e4;
-  border-right: 1px solid #e4e4e4;
-  color: #949494;
+  border-left: 1px solid #527191;
+  border-right: 1px solid #527191;
+  color: #527191;
   display: inline-block;
   font-size: 14px;
   line-height: 20px;
@@ -311,22 +318,22 @@ img {
 
 
 #login-content .form-control:focus {
-  border-color: #37c6f5;
+  border-color: #527191;
 }
 
 .loginbox .signin-btn {
-  background-color: #37c6f5;
+  background-color: #527191;
 }
 #signup-content .modal-title {
   color: #37c6f5;
 }
 
 #signup-content .form-control:focus {
-  border-color: #37c6f5;
+  border-color: #527191;
 }
 
 .signupbox span a:hover{
-  color: #37c6f5;
+  color: #527191;
 }
 
 .signupbox span {
@@ -566,7 +573,7 @@ img {
 }
 
 .title-area p {
-  color: #777777;
+  color: #5b7a9b;
   line-height: 25px;
   margin-top: 20px;
 }
@@ -712,13 +719,15 @@ img {
   -moz-background-clip: padding;
   border-radius: 5px;
   background-clip: padding-box;
-  -webkit-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
-  -moz-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
-  box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
-  color: inset 0 1px #fff,0 0 8px #c8cfe6;
+  -webkit-box-shadow: inset 0 1px #fff,0 0 8px #5b7a9b;
+  -moz-box-shadow: inset 0 1px #fff,0 0 8px #5b7a9b;
+  box-shadow: inset 0 1px #fff,0 0 8px #5b7a9b;
+  color: inset 0 1px #fff,0 0 8px #5b7a9b;
 }
 .blog-post img {
-  max-width: 100%;
+  max-width: 60%;
+  height: 400px;
+
 }
 .blog-post .post-info {
   background: #000;
@@ -746,7 +755,7 @@ img {
   margin-right: 5px;
 }
 .post-info .post-comments-count a {
-  color: #FFF;
+  color: #5b7a9b;
 }
 .post-info .post-date .date {
   font-size: 0.7em;
@@ -839,7 +848,8 @@ img {
   margin-bottom: 10px;
 }
 .comment-author img {
-  max-width: 50px;
+  max-width: 40px;
+  height: 400px;
   -webkit-border-radius: 25px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 25px;
@@ -894,7 +904,7 @@ img {
 }
 .blog-sidebar .recent-posts a,
 .blog-sidebar .blog-categories a {
-  color: #535b60;
+  color: #527191;
 }
 
 .dropdown-toggle:hover,
@@ -1273,20 +1283,7 @@ img {
 iframe {
 	border:none;
 }
-a {
-  color: #3498db;
-}
-a:hover {
-  color: #fff;
-}
 
-a:visited {
-  color: #fff;
-}
-
-a:hover {
-  color: #fff;
-}
 
 .section-title{
 	color: #3498db;
@@ -1344,24 +1341,7 @@ a:hover {
 #pricing .pricing-list{
 	color: #3498db;
 }
-/* Blog color */
-#blog .blog-wrapper .content{
-	background: #3498db;
-	border-top: 6px solid #5EB4EF;
-}
-#blog .blog-wrapper .blog-footer{
-	background: #137BC0;
-}
-#blog .carousel-control i{
-	background: #137BC0;
-}
-/* Team color */
-#team .content .title{
-	background: #3498db;
-}
-#team .social-icons ul li a i{
-	color: #3498db;
-}
+
 /* Testimonials color */
 #testimonial .testimonial{
 	border: 2px solid #3498db;
