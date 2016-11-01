@@ -24,4 +24,3 @@
 //= require custom
 //= require_tree .
 //= require custom
-//= require jquery-smooth-scroll
