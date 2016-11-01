@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
 body {
   background: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Play', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-font-family: 'Lobster', cursive;
+font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
 }
 a {
@@ -35,6 +35,10 @@ a {
 a:focus {
   outline: none;
 }
+
+a:active {
+  color:#3498db;
+}
 .btn {
   cursor: pointer;
   padding: 10px 16px;
@@ -47,8 +51,8 @@ a:focus {
   transition: all 0.3s ease;
 }
 .btn-border {
-  border: 2px solid #0BAFA0;
-  color: #0BAFA0;
+  border: 2px solid #3498db;
+  color: #3498db;
   overflow: hidden;
   font-size: 16px;
   line-height: 22px;
@@ -57,7 +61,7 @@ a:focus {
 .btn-border:hover,
 .btn-border:active {
   color: #ffffff;
-  background: #0BAFA0;
+  background: #3498db;
 }
 
 .btn-border {
@@ -84,7 +88,7 @@ img {
 .section-title {
   text-align: center;
   text-transform: uppercase;
-  color: #0BAFA0;
+  color: #3498db;
   font-size: 50px;
   font-weight: 700;
   padding: 48px 20px;
@@ -93,11 +97,11 @@ img {
   color: #333;
 }
 ::selection {
-  background: #0BAFA0;
+  background: #3498db;
   color: #fff;
 }
 ::-moz-selection {
-  background: #0BAFA0;
+  background: #3498db;
   color: #fff;
 }
 
@@ -343,7 +347,9 @@ img {
   text-decoration: none;
   outline: none;
 }
-
+#header1 {
+  margin-top: 20px;
+}
 #header1 .main-navigation {
   background: #ffffff;
   border-bottom: 2px solid #0BAFA0;
