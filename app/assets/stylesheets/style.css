@@ -896,6 +896,24 @@ img {
 .blog-sidebar .blog-categories a {
   color: #535b60;
 }
+.sidebar-widget{
+  display: inline;
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.sidebar-widget>p{
+  font-size: 14px;
+}
+
+.sidebar-widget ul li{}
+.sidebar-widget ul>li>a{
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 .dropdown-toggle:hover,
  .dropdown-toggle:focus,
 .active ul.dropdown-menu li a:hover,
