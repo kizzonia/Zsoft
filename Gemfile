@@ -32,10 +32,7 @@ gem 'momentjs-rails'
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'wow-rails'
-group :assets do
-  #gem 'jquery-smooth-scroll-rails'
-  gem 'jquery-smooth-scroll-rails'
-end
+
 gem 'ckeditor'
 gem "font-awesome-rails"
 gem 'aws-sdk', '< 2.0'
