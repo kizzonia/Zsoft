@@ -21,7 +21,7 @@ font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
 }
 a {
-  color: none;
+  color:#3498db;
   text-decoration: none;
 }
 a {
@@ -32,9 +32,7 @@ a {
   transition: all 0.3s ease;
 }
 
-a:focus {
-  outline: none;
-}
+
 
 a:active {
   color:#3498db;
@@ -103,12 +101,6 @@ img {
 ::-moz-selection {
   background: #3498db;
   color: #fff;
-}
-
-#header{
-	float: left;
-	display: inline;
-	width: 100%;
 }
 
 .header-top{
@@ -347,38 +339,36 @@ img {
   text-decoration: none;
   outline: none;
 }
-#header1 {
-  margin-top: 20px;
-}
-#header1 .main-navigation {
+
+#header .main-navigation {
   background: #ffffff;
-  border-bottom: 2px solid #0BAFA0;
+  border-bottom: 2px solid #3498db;
 }
-#header1 .navbar-brand img{
+#header .navbar-brand img{
   width: 150px;
   height: 50px;
   padding-bottom: 12px;
 }
-#header1 .nav {
+#header .nav {
   list-style: none;
   margin-top: 12px;
   margin-bottom: 22px;
 }
-#header1 .nav li {
+#header .nav li {
   margin: 0 0 0 24px;
 }
-#header1 .nav li a {
+#header .nav li a {
   text-transform: uppercase;
   padding: 5px 0;
-  color: #0BAFA0;
+  color: #3498db;
   font-weight: 300;
   position: relative;
 }
-#header1 .nav li a:after {
+#header .nav li a:after {
   position: absolute;
   top: 100%;
   left: 0;
-  border-bottom: 2px solid #0BAFA0;
+  border-bottom: 2px solid #3498db;
   width: 100%;
   content: '';
   opacity: 0;
@@ -389,11 +379,11 @@ img {
   -moz-transform: translateY(10px);
   transform: translateY(10px);
 }
-#header1 .nav li.active a:after,
-#header1 .nav li.active a,
-#header1 .nav li a:hover::after,
-#header1 .nav li a:hover,
-#header1 .nav li a:focus {
+#header .nav li.active a:after,
+#header .nav li.active a,
+#header .nav li a:hover::after,
+#header .nav li a:hover,
+#header .nav li a:focus {
   background: none;
   opacity: 1;
   color: #fff;
@@ -401,7 +391,7 @@ img {
   -moz-transform: translateY(0px);
   transform: translateY(0px);
 }
-#header1 .affix {
+#header .affix {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -410,14 +400,14 @@ img {
   animation-name: fadeInDown;
 }
 
-#header1 .affix .navbar-brand {
+#header .affix .navbar-brand {
   padding: 12px;
 }
-#header1 .affix .navbar-brand img {
+#header .affix .navbar-brand img {
   width: 150px;
   height: 50px;
 }
-#header1 .affix .nav {
+#header .affix .nav {
   margin-top: 12px;
 }
 
@@ -473,7 +463,7 @@ img {
   color: #ffffff;
 }
 #intro .main-text h1 span {
-  color: #0BAFA0;
+  color: #3498db;
 }
 #intro .main-text h2 {
   color: #ffffff;
@@ -492,13 +482,13 @@ img {
 }
 #services .service-box {
   position: relative;
-  border: 1px solid #0BAFA0;
+  border: 1px solid #3498db;
   margin-bottom: 48px;
 }
 #services .content {
   color: #ffffff;
   text-align: center;
-  background: #0BAFA0;
+  background: #3498db;
   border: 2px solid #ffffff;
   padding: 10px 12px;
 }
@@ -523,8 +513,8 @@ img {
 }
 #services .icon-wrapper i {
   background: #ffffff;
-  color: #0BAFA0;
-  border: 2px solid #0BAFA0;
+  color: #3498db;
+  border: 2px solid #3498db;
   border-radius: 50%;
   font-size: 30px;
   height: 48px;
@@ -536,7 +526,7 @@ img {
   transition: all 0.5s ease;
 }
 #services .service-box:hover i {
-  background: #0BAFA0;
+  background: #3498db;
   color: #fff;
 }
 
