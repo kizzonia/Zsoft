@@ -54,7 +54,6 @@
                                 </p>
                             </div>
                             <div class="col-sm-9 col-md-10">
-                                <h5 class="text-uppercase"><%= @comment.name %></h5>
                                 <p class="posted"><i class="fa fa-clock-o"></i><%= time_ago_in_words(comment.created_at) %> Ago</p>
                                 <p><%= render @blog.comments %></p>
                             </div>
