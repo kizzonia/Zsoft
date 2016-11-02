@@ -1,86 +1,161 @@
+<div id="heading-breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>ZongoBlog</h1>
+                </div>
+                <div class="col-md-5">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Show</a>
+                        </li>
+                        <li><a href="blog.html">Blog</a>
+                        </li>
+                        <li>Blog Post</li>
+                    </ul>
 
-
-
-
-<div class="section section-breadcrumbs">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-      <div class="section">
-      <div class="container">
-      <div class="row">
-        <!-- Blog Post -->
-        <div class="col-sm-8">
-          <div class="blog-post blog-single-post">
-            <div class="single-post-title">
-              <h3><%= raw(@blog.title) %></h3>
-            </div>
-            <div class="single-post-info">
-              <i class="glyphicon glyphicon-time"></i><%= @blog.created_at.strftime("%b, %d, %y") %>
+    <div id="content">
+        <div class="container">
 
-            </div>
-            <div class="single-post-image">
-              <<%= image_tag @blog.thumbnail.url(:large) %>
-            </div>
-            <div class="single-post-content">
-              <h3><%= raw(@blog.sub_title) %></h3>
-              <%= raw(@blog.body) %>
-            </div>
-            <!-- Comments -->
-            <div class="post-coments">
-                <h4><%= @blog.comments.count %></h4>
-                    <%= render @blog.comments %>
-                            <!-- Pagination
-                            <div class="pagination-wrapper ">
-                              <ul class="pagination pagination-sm">
-                                <li class="disabled"><a href="#">Previous</a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">Next</a></li>
-                              </ul>
+            <div class="row">
+
+                <!-- *** LEFT COLUMN ***
+  _________________________________________________________ -->
+
+                <div class="col-md-9" id="blog-post">
+                    <div id="post-content">
+                      <p class="text-muted text-uppercase mb-small text-right">By<%= @blog.created_at.strftime("%b, %d, %y") %></p>
+                        <h2><%= raw(@blog.title) %></h2>
+                        <p>
+                            <%= image_tag @blog.thumbnail.url(:medium), class: "img-responsive"  %>
+                        </p>
+
+                        <h2><%= raw(@blog.title) %></h2>
+
+                        <blockquote>
+                            <p><%= raw(@blog.sub_title) %></p>
+                        </blockquote>
+
+                        <p><%= raw(@blog.body) %></p>
+
+                    </div>
+                    <!-- /#post-content -->
+
+                    <div id="comments">
+                        <h5 class="text-uppercase"><%= @blog.comments.count %></h5>
+                        <div class="row comment">
+                            <div class="col-sm-3 col-md-2 text-center-xs">
+                                <p>
+                                  <%= image_tag "Avatar.png", class: "img-responsive img-circle" %>
+                                </p>
                             </div>
-              <!-- Comments Form -->
-              <h4>Leave a Comment</h4>
-              <div class="comment-form-wrapper">
-                 <%= render "comments/form" %>
-              </div>
-              <!-- End Comment Form -->
+                            <div class="col-sm-9 col-md-10">
+                                <h5 class="text-uppercase"><%= @comment.name %></h5>
+                                <p class="posted"><i class="fa fa-clock-o"></i><%= time_ago_in_words(comment.created_at) %> Ago</p>
+                                <p><%= render @blog.comments %></p>
+                            </div>
+                        </div>
+                        <!-- /.comment -->
+                        <div id="comment-form">
+
+                          <h4 class="text-uppercase">Leave comment</h4>
+                          <div class="comment-form-wrapper">
+                             <%= render "comments/form" %>
+                          </div>
+                        </div>
+                    <!-- /#comments -->
+                </div>
+                <!-- /#blog-post -->
+
+                <!-- *** LEFT COLUMN END *** -->
+
+                <!-- *** RIGHT COLUMN ***
+    _________________________________________________________ -->
+
+                <div class="col-md-3">
+
+                    <!-- *** MENUS AND WIDGETS ***
+_________________________________________________________ -->
+                    <div class="panel panel-default sidebar-menu">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Text widget</h3>
+                        </div>
+                        <div class="panel-body text-widget">
+                            <p>Welcome To ZongoBlog. Always Whereever You are !!!!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default sidebar-menu">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Search</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+
+                                      <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default sidebar-menu">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Categories</h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked">
+                                <<% Category.all.each do |category| %>
+                                  <li class="active">
+                                      <%= link_to category.name, blogs_path(category: category.name) %>
+                                  </li>
+                                      <% end %>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- *** MENUS AND FILTERS END *** -->
+
+                </div>
+                <!-- /.col-md-3 -->
+
+                <!-- *** RIGHT COLUMN END *** -->
+
+
             </div>
-            <!-- End Comments -->
-          </div>
+            <!-- /.row -->
+
         </div>
-      </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#content -->
+
+
+
+
+
         <!-- End Blog Post -->
         <!-- Sidebar -->
 
-            <div class="col-md-4">
-          <h4>Categories</h4>
-          <ul class="blog-categories">
-          <% Category.all.each do |category| %>
-            <li>
-                <%= link_to category.name, blogs_path(category: category.name) %>
-            </li>
-                <% end %>
-          </ul>
-        </div>
-    </div>
-        <!-- End Sidebar -->
-      </div>
-    </div>
-    </div>
+
 
 <div class=" container text-center" >
   <p>
-<%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-common" %> |
+<%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" %> |
 
-<%= link_to 'Back', blogs_path, class: "btn btn-border" %>
+<%= link_to 'Back', blogs_path, class: "btn btn-warning" %>
+<p><%= link_to 'Delete', blogs_path(@blog), method: :delete, class: "btn btn-xs btn-default", data: { confirm: 'Are you sure?' }  %>
+</p>
 </p>
 </div>
