@@ -20,13 +20,9 @@
 
     <div id="content">
         <div class="container">
-
             <div class="row">
-
-                <!-- *** LEFT COLUMN ***
-  _________________________________________________________ -->
-
-                <div class="col-md-9" id="blog-post">
+                <!-- *** LEFT COLUMN *** -->
+                <div class="col-md-6" id="blog-post">
                     <div id="post-content">
                       <p class="text-muted text-uppercase mb-small text-right">By<%= @blog.created_at.strftime("%b, %d, %y") %></p>
                         <h2><%= raw(@blog.title) %></h2>
@@ -54,31 +50,26 @@
                                 </p>
                             </div>
                             <div class="col-sm-9 col-md-10">
-                                
                                 <p><%= render @blog.comments %></p>
                             </div>
                         </div>
                         <!-- /.comment -->
                         <div id="comment-form">
-
                           <h4 class="text-uppercase">Leave comment</h4>
                           <div class="comment-form-wrapper">
                              <%= render "comments/form" %>
                           </div>
                         </div>
                     <!-- /#comments -->
-                </div>
+                  </div>
                 <!-- /#blog-post -->
 
                 <!-- *** LEFT COLUMN END *** -->
 
-                <!-- *** RIGHT COLUMN ***
-    _________________________________________________________ -->
+                <!-- *** RIGHT COLUMN ***_ -->
 
-                <div class="col-md-3">
-
-                    <!-- *** MENUS AND WIDGETS ***
-_________________________________________________________ -->
+                <div class="col-md-4 col-offset-md-1">
+                    <!-- *** MENUS AND WIDGETS ** -->
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
@@ -130,7 +121,7 @@ _________________________________________________________ -->
                 <!-- /.col-md-3 -->
 
                 <!-- *** RIGHT COLUMN END *** -->
-
+              </div>
 
             </div>
             <!-- /.row -->

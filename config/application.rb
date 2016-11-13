@@ -26,6 +26,6 @@ module Zongosoft
      config.serve_static_assets = true
      config.assets.precompile += %w(*.js)
     config.active_record.raise_in_transactional_callbacks = true
-  Paperclip::Attachment.default_options[:s3_host_name] = 's3.amazonaws.com'
+  
   end
 end

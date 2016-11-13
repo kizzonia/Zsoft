@@ -101,7 +101,6 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     momentjs-rails (2.15.1)
@@ -112,12 +111,6 @@ GEM
     nokogiri (1.6.8.1-x86-mingw32)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
-    paperclip (5.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (~> 0.3.0)
     pg (0.19.0-x86-mingw32)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -204,6 +197,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (< 2.0)
+  aws-sdk-v1 (~> 1.66)
   bootstrap (~> 4.0.0.alpha3)
   ckeditor
   coffee-rails (~> 4.1.0)
@@ -216,7 +210,6 @@ DEPENDENCIES
   momentjs-rails
   mysql2 (>= 0.3.13, < 0.5)
   nifty-attachments (~> 1.0, >= 1.0.4)
-  paperclip
   pg
   rails (= 4.2.6)
   rails_12factor
