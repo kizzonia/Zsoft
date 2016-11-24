@@ -25,20 +25,20 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
-gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+gem 'paperclip'# :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem 'nifty-attachments', '~> 1.0', '>= 1.0.4'
 
 gem 'momentjs-rails'
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'wow-rails'
-
 gem 'ckeditor'
 gem "font-awesome-rails"
 gem 'aws-sdk', '< 2.0'
 gem 'aws-sdk-v1', '~> 1.66'
 gem 'devise', '~> 3.5.7'
-#gem 'puma'
+gem 'animate-rails'
+gem 'spring'
 gem 'puma'
 gem "pg"
 # Use ActiveModel has_secure_password

@@ -1,0 +1,2 @@
+module AdminsPanelHelper
+end
