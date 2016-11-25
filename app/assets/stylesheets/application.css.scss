@@ -15,6 +15,7 @@
  *= require general
  *= require owl.carousel
  *= require_self
+ *= require_tree 
  */
 
  @import "animate";
@@ -22,13 +23,8 @@
  @import "bootstrapTheme";
 @import "responsive";
 @import "font-awesome";
-
 @import "style1";
 @import "custom";
 @import "general";
-@import "styles";
-
-
 @import "normalize";
-
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Play:700');
