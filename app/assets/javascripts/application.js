@@ -16,13 +16,14 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
-//= require wow
+//= require jquery.magnific-popup
 //= require turbolinks
-//= require m2
-//= require jquery.mixitup
+//= require main
+//= require jquery.corner
 //= require jquery.nav
 //= require stickUp.min
 //= require modernizr.custom
 //= require custom
 //= require classie
 //= require script
+//= require tree .
