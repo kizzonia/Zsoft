@@ -10,9 +10,7 @@
 <li><%= link_to "New Projects", new_project_path %> </li>
 
 -->
-<script>
-$(".owl-carousel").owlCarousel();
-</script>
+
 
 <section id="main-slider">
 	<div class="owl-carousel">
@@ -219,6 +217,28 @@ $(".owl-carousel").owlCarousel();
 	</div><!--/.container-->
 </section><!--/#services-->
 
+    <script type="text/javascript">
+            $(document).ready(function(){
+             $(".owl-carousel").owlCarousel();
+            });
+            $("#main-slider").find('.owl-carousel').owlCarousel({
+                slideSpeed: 500,
+                paginationSpeed: 500,
+                singleItem: true,
+                navigation: true,
+                navigationText: [
+                    "<i class='fa fa-angle-left'></i>",
+                    "<i class='fa fa-angle-right'></i>"
+                ],
+                afterInit: progressBar,
+                afterMove: moved,
+                startDragging: pauseOnDragging,
+                //autoHeight : true,
+                transitionStyle: "fade" //fadeUp fade goDown backSlide
+
+            });
+     });
+        </script>
 <!-- Start Contact Section -
 <section id="contact">
 <div class="overlay">

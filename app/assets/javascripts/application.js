@@ -15,14 +15,13 @@
 //= require jquery
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require jquery_ujs
+//= require turbolinks
 //= require owl.carousel
 //= require custom-scripts
 //= require ckeditor/init
 //= require owl.carousel.min
-//= require jquery_ujs
 //= require jquery.isotope.min
 
 //= require mousescroll
 //= require jquery.inview.min
-
-//= require turbolinks
