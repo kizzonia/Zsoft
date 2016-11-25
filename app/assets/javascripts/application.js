@@ -21,6 +21,6 @@
 //= require jquery.isotope.min
 //= require custom-scripts
 //= require mousescroll
-//= require jquery.inview
+//= require jquery.inview.min
 
 //= require turbolinks
