@@ -22,7 +22,7 @@
 //= require jquery.mixitup
 //= require jquery.nav
 //= require stickUp.min
-//= require modernizer.custom
+//= require modernizr.custom
 //= require custom
 //= require classie
 //= require script
