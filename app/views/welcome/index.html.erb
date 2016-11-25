@@ -11,8 +11,8 @@
 
 -->
 
-
-<section id="main-slider">
+<!--
+ <section id="main-slider">
 	<div class="owl-carousel">
 		<div class="item" style="background-image: url("../assets/bg-intro.jpg");">
 			<div class="slider-inner">
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 			</div>
-		</div><!--/.item-->
+		</div>
 		<div class="item" style="background-image: url("../assets/2D.jpg");">
 			<div class="slider-inner">
 				<div class="container">
@@ -47,10 +47,20 @@
 					</div>
 				</div>
 			</div>
-		</div><!--/.item-->
-	</div><!--/.owl-carousel-->
-</section><!--/#main-slider-->
-
+		</div>>
+	</div>
+</section> --->
+<header>
+		<div class="container">
+			<div class="slider-container">
+				<div class="intro-text">
+					<div class="intro-lead-in">Welcome To ZongoSoft</div>
+					<div class="intro-heading">It's Nice To Meet You</div>
+					<a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+				</div>
+			</div>
+		</div>
+	</header>
 <section id="hero-text" class="wow fadeIn">
 	<div class="container">
 		<div class="row">
@@ -74,7 +84,7 @@
 
 		<div class="row">
 			<div class="col-sm-6 wow fadeInLeft">
-				<img class="img-responsive" src="images/about.png" alt="">
+				<%= image_tag "3D.jpg", class: "img-responsive" %>
 			</div>
 
 			<div class="col-sm-6 wow fadeInRight">
@@ -115,7 +125,6 @@
 			<div class="col-md-6">
 				<div class="media service-box wow fadeInRight">
 					<div class="imgs pull-left">
-						<img src="images/img002.jpg" />
 						<%= image_tag "img002.jpg" %>
 					</div>
 					<div class="media-body">
@@ -205,7 +214,7 @@
 					<div class="media service-box">
 						<div class="pull-left">
 							<i class="fa fa-bullseye"></i>
-						</div>
+ 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">24/7 Support</h4>
 							<p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
@@ -216,6 +225,13 @@
 		</div><!--/.row-->
 	</div><!--/.container-->
 </section><!--/#services-->
+
+
+
+
+
+
+
 
     <script type="text/javascript">
             $(document).ready(function(){
@@ -239,25 +255,3 @@
             });
      });
         </script>
-<!-- Start Contact Section -
-<section id="contact">
-<div class="overlay">
-<div class="container">
-<h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Contact</span> Us</h1>
-<div class="row">
-<div class="contact-form">
-<section id="connected1">
-<div class="text-center">
-<div class="contact-item">
-<a href="#"><i class="fa fa-phone"></i></a>
-<h5>Support Team</h5>
-<p class="text-center"> <%= link_to "We Are Here To Assist You", new_contact_path, class: "btn btn-border" %></p>
-
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</section>
--- End Contact Section -->

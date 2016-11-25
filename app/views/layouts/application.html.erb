@@ -3,6 +3,7 @@
 <head>
   <title>Zongosoft.com </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag ' https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css' %>
   <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
@@ -27,13 +28,6 @@
 
 
                   <div class="collapse navbar-collapse navbar-right">
-
-
-
-
-
-
-
                       <ul class="nav navbar-nav">
                           <li class="scroll active"><%= link_to "Home", root_path %></li>
                           <li class="scroll">  <%= link_to "Services", root_path %></li>
@@ -51,48 +45,6 @@
 
 <%= yield %>
  <%= insert_paloma_hook %>
-
-		<!-- Start Connected Section -->
-		<section id="connected">
-			<div class="container">
-				<div class="row">
-					<h2 class="section-title wow fadeInUp" data-wow-delay=".2s">Stay Connected</h2>
-					<h3 class="discription wow fadeIn" data-wow-delay=".2s">We enjoy your calls and Our Team work so lets work together.</h3>
-					<hr>
-					<div class="connected-wrapper text-center">
-						<div class="col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-							<div class="contact-item">
-								<a href="#"><i class="fa fa-phone"></i></a>
-								<h5>Customer Care</h5>
-								<h4>+234 816-186-9777</h4>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-							<div class="contact-item">
-								<a href="#"><i class="fa fa-user"></i></a>
-								<h5>Support Team</h5>
-								<h4>jfortune@zongosoft.com</h4>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-							<div class="contact-item">
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<h5>Twitter</h5>
-								<h4>#zongosoft</h4>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-							<div class="contact-item">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<h5>Facebook</h5>
-								<h4>zongosoft@facebook.com</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Connected Section -->
 
 		<!-- Footer Section Start -->
 		<footer id="footer">

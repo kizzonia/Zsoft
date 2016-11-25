@@ -198,9 +198,9 @@ border-color: #132125;
     -webit-transition: border-color 400ms;
     transition: border-color 400ms;
   }
-  #main-nav.navbar-default .dropdown-menu > li > a { 
+  #main-nav.navbar-default .dropdown-menu > li > a {
     padding: 15px 0;
-    color:#A8A8A8; 
+    color:#A8A8A8;
   }
   #main-nav.navbar-default .dropdown-menu > li:first-child > a {
     border-top: 0;
@@ -217,6 +217,71 @@ border-color: #132125;
     background-color: transparent;
   }
 }
+/*--------------------
+3. Header
+--------------------*/
+
+header {
+    background-image: url('..assets/bg-intro.jpg');
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text {
+	    padding-top: 300px;
+	    padding-bottom: 200px;
+	}
+}
+
+header .intro-text .intro-lead-in {
+
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-lead-in {
+
+	    font-style: italic;
+	    font-size: 40px;
+	    line-height: 40px;
+	    margin-bottom: 25px;
+	}
+}
+
+header .intro-text .intro-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-heading {
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    font-size: 75px;
+	    line-height: 75px;
+	    margin-bottom: 50px;
+	}
+}
+
 #main-slider {
   overflow: hidden;
 }
@@ -348,7 +413,7 @@ border-color: #132125;
   transition: background-color 400ms, background-color 400ms;
   position: relative;
 }
- 
+
 .media.service-box:hover .pull-left > i {
   color: #232323;
   background: #FFFFFF;
@@ -379,7 +444,7 @@ border-color: #132125;
 #portfolio .portfolio-filter > li a.active {
   background: #6C6C6C;
   color: #fff;
-} 
+}
 #portfolio .portfolio-items {
   margin: -15px;
 }
@@ -540,32 +605,32 @@ margin: 0 8px;
   padding: 3px;
   background-color: #fff;
 }
-/*Team*/ 
+/*Team*/
 #our-team {
   padding: 100px 0;
 }
 #our-team .team-member {
-  padding: 13px; 
-  border: 1px solid #eeeeee; 
+  padding: 13px;
+  border: 1px solid #eeeeee;
 }
 #our-team .team-member .team-img {
   margin: -15px -15px 0 -15px;
 }
 #our-team .team-member .team-info {
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   text-align: center;
-} 
+}
 #our-team .team-member:hover .social-icons > li > a {
   background: #45aed6;
 }
-#our-team .team-member:hover .social-icons{ 
-height:35px; 
+#our-team .team-member:hover .social-icons{
+height:35px;
 }
 #our-team .social-icons {
   list-style: none;
   padding: 0;
   margin: 0;
-  height:0px; 
+  height:0px;
   overflow:hidden;
   -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
     transition: height 1s;
@@ -685,7 +750,7 @@ height:35px;
   padding: 10px;
 }
 #pricing ul.pricing li.plan-header {
-  background: #eee; 
+  background: #eee;
   margin: -15px -15px 10px;
   padding: 15px 15px 30px;
   border: 0;
@@ -696,8 +761,8 @@ height:35px;
   top: -10px;
   display: inline-block;
   width: 100%;
-  height: 116px; 
-  color: #000;  
+  height: 116px;
+  color: #000;
   border-bottom: 1px dashed #696363;
 }
 #pricing ul.pricing li.plan-header .price-duration > span {
@@ -749,11 +814,11 @@ font-style: normal;
 line-height: 27px;
 font-size: 15px;
 }
-.contact-info .form-control { 
+.contact-info .form-control {
 padding: 6px 12px;
 border-radius: 0;
 }
- 
+
 /***********************
 ********* Footer ******
 ************************/
@@ -775,7 +840,7 @@ border-radius: 0;
   margin: 0 -7.5px;
 }
 #footer ul > li {
- display: inline-block; 
+ display: inline-block;
 background: rgb(47, 47, 47);
 padding: 3px 0;
 width: 31px;
@@ -811,14 +876,14 @@ margin: 5px 2px;
 	#portfolio .portfolio-item .portfolio-item-inner .portfolio-info .preview {
 width: 28px;
 height: 24px;
-line-height: 24px; 
+line-height: 24px;
 margin: 9px auto;
 }
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
 padding: 7px 0 0;
 }
 }
-.form-control { 
-    border: 1px solid #FFF; 
+.form-control {
+    border: 1px solid #FFF;
     border-bottom: 1px solid #D8D8D8;
 }
