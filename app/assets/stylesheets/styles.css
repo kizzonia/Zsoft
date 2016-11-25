@@ -174,8 +174,7 @@ border-color: #132125;
   }
   .navbar-default .navbar-nav>li>a {
 	color: #6C6C6C;
-  float:right;
-  padding-left: 10px;
+
 	}
   #main-nav.navbar-default .navbar-nav > li.active > a,
   #main-nav.navbar-default .navbar-nav > li.open > a,
@@ -240,7 +239,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    color: #fff;
+    color: #1E8CE5;
 }
 
 @media (min-width: 768px) {
@@ -325,7 +324,7 @@ background-color: #dfdfdf;
 
 .skillbar-bar {
 display: block;
-    background-color: #dfdfdf;
+    background-color: #45aed6;
     height: 3px;
     width: 100%;
 }
@@ -334,7 +333,7 @@ display: block;
 	font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
-    color: #fff;
+    color: #1E8CE5;
     letter-spacing: 2px;
 margin: 0;
     padding: 12px 0;
