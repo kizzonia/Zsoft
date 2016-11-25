@@ -154,7 +154,7 @@ border-color: #132125;
   border-radius: 0;
   margin-bottom: 0;
   float:right;
-  padding-left: 10px;
+  padding-left: 50px;
 }
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
@@ -239,6 +239,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    color: black;
 }
 
 @media (min-width: 768px) {
@@ -283,7 +284,67 @@ header .intro-text .intro-heading {
 	    margin-bottom: 50px;
 	}
 }
+/*--------------------
+4.2. Skills
+--------------------*/
 
+.skills-text h2 {
+	margin: 0 0 30px;
+}
+
+.skillbar-item {
+    margin-bottom: 30px;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.skillbar-score {
+background-color: #dfdfdf;
+    padding: 7px;
+    text-align: center;
+    color: #45aed6;
+    font-weight: 300;
+    float: right;
+    width: 50px;
+    height: 40px;
+    vertical-align: middle;
+ }
+
+.skillbar-score .score {
+    font-size: 20px;
+}
+
+.skillbar-score .percent {
+    font-size: 13px;
+}
+
+.skillbar-bar {
+display: block;
+    background-color: #dfdfdf;
+    height: 3px;
+    width: 100%;
+}
+
+.skillbar h3 {
+	font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #45aed6;
+    letter-spacing: 2px;
+margin: 0;
+    padding: 12px 0;
+}
+
+.skillbar-percent {
+    color: #fff;
+    background-color: #000000;
+    float: left;
+    height: 3px;
+}
 #main-slider {
   overflow: hidden;
 }
