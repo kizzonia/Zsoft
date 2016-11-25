@@ -17,7 +17,6 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require owl.carousel
-//= require jquery.magnific-popup
 //= require turbolinks
 //= require main
 //= require jquery.corner
@@ -25,5 +24,4 @@
 //= require stickUp.min
 //= require modernizr.custom
 //= require custom
-//= require classie
 //= require script
