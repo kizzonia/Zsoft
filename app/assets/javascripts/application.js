@@ -13,14 +13,14 @@
 
 
 //= require jquery
+//= require jquery_ujs
 //= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
 //= require owl.carousel
 //= require custom-scripts
 //= require ckeditor/init
-//= require_tree
-//= require paloma
+//= require_tree .
 //= require main
 //= require owl.carousel.min
 //= require jquery.isotope.min
