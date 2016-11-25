@@ -26,7 +26,7 @@ ActionMailer::Base.smtp_settings = {
 
     config.assets.digest = true
     config.assets.precompile =  ['*.js']
-    config.assets.precompile += %w( *.css *.scss *.png *.jpg *.jpeg *.gif *.svg *.eot *.ttf)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.eot *.ttf)
     config.log_level = :debug
 
 
