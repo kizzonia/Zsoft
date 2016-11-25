@@ -16,11 +16,12 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require owl.carousel
+//= require custom-scripts
 //= require ckeditor/init
 //= require owl.carousel.min
 //= require jquery_ujs
 //= require jquery.isotope.min
-//= require custom-scripts
+
 //= require mousescroll
 //= require jquery.inview.min
 
