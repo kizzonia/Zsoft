@@ -282,6 +282,37 @@ color: #ECEBEB;
 	letter-spacing: 0px;
 	margin-top: 10px;
 }
+#hero-text {
+  padding: 70px 0;
+  background-color: #1E8CE5;
+  border-bottom:2px solid #EAEAEA;
+  color: #fff;
+}
+#hero-text h2 {
+  margin-top: 0;
+  color: #FFFFFF;
+}
+#hero-text .btn {
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  color: #000;
+}
+#cta2 {
+  background: #45b1da;
+  color: #fff;
+  padding-top: 70px;
+}
+#cta2 .btn {
+  margin-top: 10px;
+}
+#cta2 h2 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+}
+#cta2 h2 > span {
+  color: #45aed6;
+}
 
 
 .network-name {

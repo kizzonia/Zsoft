@@ -16,6 +16,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require owl.carousel
 //= require jquery.magnific-popup
 //= require turbolinks
 //= require main
