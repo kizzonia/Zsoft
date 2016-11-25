@@ -11,15 +11,16 @@
  * file per style scope.
  *= require bootstrap
  *= require font-awesome
- 
+ *= require owl.carousel
+ *= require owl.transitions
  *= require_self
 
  */
 
- @import "animate";
+ @import "animate.min";
  @import "bootstrap";
  @import "font-awesome";
- @import "general";
- @import "custom";
- @import "style1";
+ @import "owl.carousel";
+
+ @import "styles";
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Play:700');

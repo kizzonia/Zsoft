@@ -13,9 +13,14 @@
 
 
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require ckeditor/init
-//= require stickUp.min
+//= require owl.carousel.min
+//= require jquery_ujs
+//= require jquery.isotop
+//= require custom-scripts
+//= require mousescroll
+//= require jquery.inview
+
 //= require turbolinks

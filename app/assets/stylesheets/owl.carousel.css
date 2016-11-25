@@ -1,6 +1,6 @@
 /* 
  * 	Core Owl Carousel CSS File
- *	v1.3.2
+ *	v1.3.3
  */
 
 /* clearfix */
@@ -55,7 +55,7 @@
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(grabbing.png) 8 8, move;
+    cursor:url(grabbing.html) 8 8, move;
 }
 
 /* fix */
