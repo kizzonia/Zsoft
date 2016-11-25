@@ -22,4 +22,7 @@
 //= require jquery.nav
 //= require stickUp.min
 //= require custom
+//= require classie
+//= require jquery.corner
+//= require html5shiv
 //= require script
