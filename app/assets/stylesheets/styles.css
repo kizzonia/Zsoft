@@ -1,13 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
-/*
-Author: webthemez.com
-Author URL: http://webthemez.com
-*/
-/*************************
-*******Typography******
-**************************/
+
+.container {
+  width: 65%;
+}
 body {
-  padding-top: 100px;
+  padding-top: 50px;
   background: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -239,7 +236,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    color: #1E8CE5;
+    color: #272727;
 }
 
 @media (min-width: 768px) {
