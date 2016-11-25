@@ -15,6 +15,7 @@
 //= require jquery
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require owl.carousel
 //= require ckeditor/init
 //= require owl.carousel.min
 //= require jquery_ujs
