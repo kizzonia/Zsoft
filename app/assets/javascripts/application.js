@@ -17,5 +17,5 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require ckeditor/init
-//= require stickUp
+//= require stickUp.min
 //= require turbolinks
