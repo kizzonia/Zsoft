@@ -18,7 +18,7 @@
 //= require ckeditor/init
 //= require owl.carousel.min
 //= require jquery_ujs
-//= require jquery.isotope
+//= require jquery.isotope.min
 //= require custom-scripts
 //= require mousescroll
 //= require jquery.inview
