@@ -10,20 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require ckeditor/init
-//= require stickUp.min
+
+
 //= require jquery
-//= require bootstrap.min
-//= require main
-//= require custom
-//= require inflow
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap-sprockets
-//= require jquery.nav
-//= require classie
-//= require jquery.corner
-//= require html5shiv
-//= require script
-//= require owl.carousel
 //= require turbolinks
+//= require_tree .
+//= require ckeditor/init
