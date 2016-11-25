@@ -22,11 +22,11 @@ ActionMailer::Base.smtp_settings = {
 
     # Compress JavaScripts and CSS.
 
-    config.assets.compile = true
+    config.assets.compile = false
 
     config.assets.digest = true
     config.assets.precompile =  ['*.js']
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.eot *.ttf)
+    config.assets.precompile += %w( *.css *.scss *.png *.jpg *.jpeg *.gif *.svg *.eot *.ttf)
     config.log_level = :debug
 
 
