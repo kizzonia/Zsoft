@@ -153,8 +153,7 @@ border-color: #132125;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  float:right;
-  padding-left: 50px;
+
 }
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
@@ -175,6 +174,8 @@ border-color: #132125;
   }
   .navbar-default .navbar-nav>li>a {
 	color: #6C6C6C;
+  float:right;
+  padding-left: 10px;
 	}
   #main-nav.navbar-default .navbar-nav > li.active > a,
   #main-nav.navbar-default .navbar-nav > li.open > a,
@@ -239,7 +240,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    color: black;
+    color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -333,14 +334,14 @@ display: block;
 	font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
-    color: #45aed6;
+    color: #fff;
     letter-spacing: 2px;
 margin: 0;
     padding: 12px 0;
 }
 
 .skillbar-percent {
-    color: #fff;
+    color: #45aed6;
     background-color: #000000;
     float: left;
     height: 3px;
