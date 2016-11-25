@@ -166,7 +166,7 @@ border-color: #132125;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   }
   #main-nav.navbar-default .navbar-nav > li > a {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 35px;
   }
   .navbar-default .navbar-nav>li>a {

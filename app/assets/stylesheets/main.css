@@ -195,11 +195,7 @@ _____________________________________________________
 /* --------------------------------------------------
 	0.2 Utility
 -------------------------------------------------- */
-hr {
-  margin-top: 0;
-  margin-bottom: 0;
-  border-color: #ccc;
-}
+
 
 .no-gap {
   padding-left: 0;
@@ -239,7 +235,7 @@ hr {
 
 /* ---- Backgrounds ---- */
 .dark-bg {
-  background: #111;
+  background: #fff;
 }
 
 .dark-bg h1,
@@ -279,7 +275,7 @@ hr {
 }
 
 .gray-bg {
-  background: #f8f8f8;
+  background: #1E8CE5;
 }
 
 .bg-white {
@@ -1252,7 +1248,7 @@ mark {
 }
 
 /* ---- 1.1 Text ---- */
-body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p {
+ .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item  {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1261,114 +1257,6 @@ body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper
   color: #777;
 }
 
-h1,
-.comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer,
-h2,
-h3,
-.page-title .subheading,
-h4,
-.ft-tabs .tabs-list li a .tab-group .tab-heading,
-.testimonials-3col .t-item blockquote footer cite,
-.testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite,
-.wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite,
-.bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .team-3col .t-item .t-info .t-role,
-.team-4col .t-item .t-info .t-role, .freelancer-about .t-item .t-info .t-role, .t-join .t-info .t-role,
-.login-2 .bg-overlay .form-wrapper .form-content .cards-header,
-.login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead,
-h5,
-.ft-boxed-hover ul li .hover-content .ft-heading,
-.ft-tabs .tabs-list li a .tab-group .tab-info,
-.sidebar .comments-widget .widget-item span .widget-comm-title,
-.comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer,
-.shop-layout-options span,
-h6, .progress-group .progress-title,
-.progress-group .progress-value, .accordions-1 .panel .panel-heading .panel-title, .footer-social-links ul li, .footer-contact .contact-info .show-info-link, .footer-contact .contact-info address ul li .adr-heading, .footer-contact .contact-info address .show-map, .footer-litle address ul li .adr-group .adr-heading, .ft-cards .ft-item a, .ft-cards-2 .ft-card-item .ft-content .link-btn, .ft-boxed-hover ul li .hover-content a, .circles-counters .circle-item .circle-text, .circles-counters-dark-bg .circle-item .circle-text, .number-counters .count-wrapper .count-item .count-text, .number-counters-dark-bg .count-wrapper .count-item .count-text, .project-nav nav .nav-btns li a, .pricing-tables .p-table .desc, .blog-post-nav .prev-btn,
-.blog-post-nav .next-btn, .sidebar .tags-widget .tag-list li a, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a,
-.contact-1 .contact-wrapper .contact-info-wrapper address .address-group p, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a, .landing-hero .heading-wrapper .cta-btn, .shop-sidebar .filter-widget label, .shop-sidebar-vertical .filter-widget label, .shop-sidebar .tags-widget .tag-list li a, .shop-sidebar-vertical .tags-widget .tag-list li a, .checkout-table tbody tr td:first-child, .prod-reviews .tp-review .tpr-name {
-  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  color: #111;
-  text-transform: uppercase;
-}
-
-.dropcaps:first-child:first-letter {
-  padding: 6px 13px;
-  margin-right: 3px;
-  background: #ececec;
-  color: #111;
-  font-weight: 700;
-  font-size: 23px;
-}
-
-/* ---- 1.2 Headings ---- */
-h1, .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer {
-  font-size: 1.7em;
-  letter-spacing: 5px;
-}
-
-h2 {
-  font-size: 1.5em;
-  letter-spacing: 4px;
-}
-
-h3, .page-title .subheading {
-  font-size: 1.3em;
-  letter-spacing: 3.5px;
-}
-
-h4, .ft-tabs .tabs-list li a .tab-group .tab-heading, .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .team-3col .t-item .t-info .t-role, .team-4col .t-item .t-info .t-role, .freelancer-about .t-item .t-info .t-role, .t-join .t-info .t-role, .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead {
-  font-size: 1.07em;
-  letter-spacing: 3px;
-}
-
-h5, .ft-boxed-hover ul li .hover-content .ft-heading, .ft-tabs .tabs-list li a .tab-group .tab-info, .sidebar .comments-widget .widget-item span .widget-comm-title, .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer, .shop-layout-options span {
-  font-size: 1em;
-  letter-spacing: 2px;
-}
-
-h6, .progress-group .progress-title,
-.progress-group .progress-value, .accordions-1 .panel .panel-heading .panel-title, .footer-social-links ul li, .footer-contact .contact-info .show-info-link, .footer-contact .contact-info address ul li .adr-heading, .footer-contact .contact-info address .show-map, .footer-litle address ul li .adr-group .adr-heading, .ft-cards .ft-item a, .ft-cards-2 .ft-card-item .ft-content .link-btn, .ft-boxed-hover ul li .hover-content a, .circles-counters .circle-item .circle-text, .circles-counters-dark-bg .circle-item .circle-text, .number-counters .count-wrapper .count-item .count-text, .number-counters-dark-bg .count-wrapper .count-item .count-text, .project-nav nav .nav-btns li a, .pricing-tables .p-table .desc, .blog-post-nav .prev-btn,
-.blog-post-nav .next-btn, .sidebar .tags-widget .tag-list li a, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a,
-.contact-1 .contact-wrapper .contact-info-wrapper address .address-group p, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a, .landing-hero .heading-wrapper .cta-btn, .shop-sidebar .filter-widget label, .shop-sidebar-vertical .filter-widget label, .shop-sidebar .tags-widget .tag-list li a, .shop-sidebar-vertical .tags-widget .tag-list li a, .checkout-table tbody tr td:first-child, .prod-reviews .tp-review .tpr-name {
-  font-size: 0.85em;
-  letter-spacing: 2px;
-}
-
-.h-alt {
-  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 300;
-}
-
-/* ---- 1.3 Links ---- */
-a {
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-p > a {
-  border-bottom: 1px solid rgba(44, 170, 223, 0);
-}
-
-p > a:visited {
-  color: #1c8cbc;
-  text-decoration: none;
-}
-
-p > a:visited:hover,
-p > a:visited:focus {
-  color: #2caadf;
-  text-decoration: none;
-}
-
-p > a:hover,
-p > a:focus {
-  color: #1c8cbc;
-  text-decoration: none;
-  border-bottom: 1px solid #2caadf;
-}
 
 /* ---- 1.4 Blockquotes ---- */
 blockquote, .wrapper-404 .content-wrapper .info-wrapper .info-404, .bg-maintenance .content-wrapper .content-inner p {
@@ -1464,7 +1352,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
   position: relative;
   display: inline-block;
   padding: 8px 38px;
-  background: #111;
+  background: #1E8CE5;
   color: #ececec;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
@@ -1478,17 +1366,17 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 
 .btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .btn-text:visited, .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
   color: #ececec;
-  background: #111;
+  background: #1E8CE5;
 }
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: #1E8CE5;
 }
 
 .btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, .btn-text:hover, .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: #1E8CE5;
 }
 
 .btn:focus, .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
@@ -1508,7 +1396,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
   content: '';
   position: absolute;
-  background: #111;
+  background: #1E8CE5;
   left: 0;
   top: 100%;
   width: 100%;
@@ -1542,7 +1430,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 
 input[class="btn-ghost"]:hover {
   color: #ececec;
-  background: #111;
+  background: #1E8CE5;
 }
 
 input[class="btn-ghost"]:after {
@@ -1599,17 +1487,17 @@ input[class="btn-ghost"]:after {
 /* ---- 2.6 Light Buttons ---- */
 .btn-light {
   color: #111;
-  background: #ececec;
+  background: #1E8CE5;
 }
 
 .btn-light:visited {
   color: #111;
-  background: #ececec;
+  background: #1E8CE5;
 }
 
 .btn-light:visited:hover {
   color: #111;
-  background: #bebebe;
+  background: #1E8CE5;
 }
 
 .btn-light:hover {
