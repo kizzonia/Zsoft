@@ -11,20 +11,15 @@
 // about supported directives.
 //
 
-//= require bootstrap-sprockets
 
-//= require owl.carousel
-//= require ckeditor/init
+
+
 //= require jquery
 //= require bootstrap
 //= require jquery_ujs
+//= require owl.carousel
+//= require ckeditor/init
 //= require turbolinks
 //= require init
-//= require owl.carousel
-//= require custom-scripts
-//= require ckeditor/init
-//= require owl.carousel.min
-//= require jquery.isotope.min
-
-//= require mousescroll
-//= require jquery.inview.min
+//= require_tree .
+//= require paloma
