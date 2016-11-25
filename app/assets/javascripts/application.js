@@ -21,6 +21,7 @@
 //= require ckeditor/init
 //= require_tree
 //= require paloma
+//= require main
 //= require owl.carousel.min
 //= require jquery.isotope.min
 
