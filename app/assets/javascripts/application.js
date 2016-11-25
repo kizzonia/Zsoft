@@ -21,6 +21,8 @@
 //= require m2
 //= require jquery.mixitup
 //= require jquery.nav
+//= require stickUp.min
+//= require modernizer.custom
 //= require custom
-//= require_tree .
-//= require custom
+//= require classie
+//= require script

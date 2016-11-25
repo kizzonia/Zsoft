@@ -11,7 +11,9 @@
  * file per style scope.
  *= require bootstrap
  *= require font-awesome
- *= require_tree .
+ *= require owl.theme
+ *= require general
+ *= require owl.carousels
  *= require_self
  */
 
@@ -19,8 +21,41 @@
  @import "bootstrap";
 @import "responsive";
 @import "font-awesome";
+@import "custom";
+@@import "general";
 @import "style";
-@import "123";
+
 @import "normalize";
-@import "blogs";
+
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Play:700');
+#hero-text {
+  padding: 70px 0;
+  background-color: #1E8CE5;
+  border-bottom:2px solid #EAEAEA;
+  color: #fff;
+}
+#hero-text h2 {
+  margin-top: 0;
+  color: #FFFFFF;
+}
+#hero-text .btn {
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  color: #000;
+}
+#cta2 {
+  background: #45b1da;
+  color: #fff;
+  padding-top: 70px;
+}
+#cta2 .btn {
+  margin-top: 10px;
+}
+#cta2 h2 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+}
+#cta2 h2 > span {
+  color: #45aed6;
+}

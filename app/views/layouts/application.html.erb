@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Zongosoft</title>
+  <title>Zongosoft.com </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
@@ -9,34 +9,40 @@
 
 </head>
 <body>
+  <%= render 'layouts/intro-header' if @has_header %>
   <!-- Start header -->
-  <div class="navmenu navmenu-default navmenu-fixed-left offcanvas"> <!--- Off Canvas Side Menu -->
-      <div class="close" data-toggle="offcanvas" data-target=".navmenu">
-          <span class="fa fa-close"></span>
-      </div>
-      <div class="add-margin"></div>
-      <ul class="nav navmenu-nav"> <!--- Menu -->
+  <!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to root_path, :class "navbar-brand" do %>
+        <%= image_tag "Link.png" %>
+        <% end %>
+    </div>
 
-        <li class="active"><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Services", root_path %></li>
-        <li><%= link_to "About us", root_path %></li>
-        <li><%= link_to "Projects", projects_path %></li>
-        <li><%= link_to "Blog", blogs_path %></li>
-      </ul><!--- End Menu -->
-  </div> <!--- End Off Canvas Side Menu -->
+    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
 
-						<!-- logo here -->
+        <li class="menuItem"><%= link_to "Home", root_path %></li>
+        <li class="menuItem"><%= link_to "Services", root_path %></li>
+        <li class="menuItem"><%= link_to "About us", root_path %>></li>
+        <li class="menuItem"><%= link_to "Projects", projects_path %></li>
+        <li class="menuItem"><%= link_to "Blog", blogs_path %></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
 
 
-        <!-- Home Section -->
-        <div id="home">
-            <div class="container text-center">
-                <!-- Navigation -->
-                <nav id="menu" data-toggle="offcanvas" data-target=".navmenu">
-                    <span class="fa fa-bars"></span>
-                    <span class="navbar-brand"> <%= image_tag "Logo.jpg" %></span>
-                </nav>
-<!---
+        <!-- Home Section 
+
 
 
 
