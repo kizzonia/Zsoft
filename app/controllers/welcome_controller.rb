@@ -6,7 +6,7 @@ class WelcomeController < ApplicationController
 
 
   def has_header
-    @have_sidebar = true
+    @has_header = true
   end
 
 end

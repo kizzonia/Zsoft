@@ -9,7 +9,9 @@
 
 </head>
 <body>
-  <%= render 'layouts/intro-header', if @has_header %>
+  <% if has_header? %>
+  <%= render 'layouts/intro-header' %>
+  <% end %>
   <!-- Start header -->
   <!-- NavBar-->
 <nav class="navbar-default" role="navigation">
@@ -21,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to root_path, :class "navbar-brand" do %>
+      <%= link_to root_path, class: "navbar-brand" do %>
         <%= image_tag "Link.png" %>
         <% end %>
     </div>
