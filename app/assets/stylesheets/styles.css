@@ -222,7 +222,7 @@ border-color: #132125;
 --------------------*/
 
 header {
-    background-image: url('..assets/bg-intro.jpg');
+    background-image: url('../assets/bg-intro.jpg');
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
