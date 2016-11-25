@@ -19,6 +19,7 @@
 //= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
+//= require init
 //= require owl.carousel
 //= require custom-scripts
 //= require ckeditor/init
