@@ -19,9 +19,7 @@
 //= require owl.carousel
 //= require turbolinks
 //= require main
-//= require jquery.corner
 //= require jquery.nav
 //= require stickUp.min
-//= require modernizr.custom
 //= require custom
 //= require script
