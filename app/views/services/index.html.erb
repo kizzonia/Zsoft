@@ -1,33 +1,92 @@
-<p id="notice"><%= notice %></p>
+<header class="page-title pt-large pt-dark pt-plax-lg-dark" data-stellar-background-ratio="0.4">
+      <div class="container">
+          <div class="row">
 
-<h1>Listing Services</h1>
+            <div class="col-sm-6">
+              <h1>Services</h1>
+              <span class="subheading">Services we provide</span>
+            </div>
+            <ol class="col-sm-6 text-right breadcrumb">
+              <li><%= link_to "Home", root_path %></li>
+              <li class="active"><%= link_to "Services", services_path %></li>
+            </ol>
+          </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Serdescription</th>
-      <th>Otherser</th>
-      <th>Otherserdescription</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+        </div>
+    </header>
 
-  <tbody>
-    <% @services.each do |service| %>
-      <tr>
-        <td><%= service.title %></td>
-        <td><%= service.serdescription %></td>
-        <td><%= service.otherSer %></td>
-        <td><%= service.otherSerdescription %></td>
-        <td><%= link_to 'Show', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <!-- ========== Features - Cards ========== -->
 
-<br>
+          <div class="gray-bg">
+            <section class="container ft-cards">
+              <div class="row section">
 
-<%= link_to 'New Service', new_service_path %>
+                <!-- Item 1 -->
+                <% @services.each do |service| %>
+                <div class="col-lg-4 col-md-6 mb-sm-50">
+                  <div class="ft-item">
+                    <span class="linea-basic-pencil-ruler"></span>
+                    <h4><%= service.title %></h4>
+                    <p><%= service.serdescription %></p>
+                        <%= link_to 'Learn more', service do %>
+                            <span class="linea-arrows-slim-right"></span>
+                            <% end %>
+
+                  </div>
+                </div>
+                <% end %>
+
+            </div><!-- / .row -->
+            </section>
+          </div><!-- / .gray-bg -->
+
+          <!-- ========== Steps - Numbers ========== -->
+
+    <section class="container ft-steps-numbers">
+      <div class="row section">
+
+        <header class="sec-heading ws-s">
+          <h2>Our work process</h2>
+          <span class="subheading">Lorem ipsum dolor sit amet, consectetur</span>
+        </header>
+
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 mb-sm-100 ft-item">
+          <span class="ft-nbr">01</span>
+          <h4>Design</h4>
+          <p>Gather Data on The Businesses Needs and Create Efficient and Effective Plan , And We Write Up Creative Wireframes And Structures For Your Project </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6 mb-sm-100 ft-item">
+          <span class="ft-nbr">02</span>
+          <h4>Develop</h4>
+          <p>Once The Step 1 is completed and accepted we move on to development , Where we build Your projects to your taste</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-lg-4 col-md-6 mb-sm-100 ft-item">
+          <span class="ft-nbr">03</span>
+          <h4>Deploy</h4>
+          <p>Then we depoly and test your Web and mobile applications on All suitable platforms </p>
+        </div>
+
+      </div><!-- / .row -->
+    </section><!-- / .container -->
+
+
+
+    <div class="cta-link">
+          <div class="bg-overlay">
+
+            <div class="cta-wrapper">
+              <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Love to hear from you</h3>
+              <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
+            </div>
+
+          </div>
+        </div><!-- / .cta-link -->
+
+        <div class="text-center" >
+        <%= link_to 'New Service', new_service_path, class: "btn btn-ghost" %>
+        </div>

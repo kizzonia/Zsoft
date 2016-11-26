@@ -281,6 +281,38 @@ _____________________________________________________
 .bg-white {
   background: #fff;
 }
+h1, .comingsoon .content-wrapper .content-inner .cs-timer .item .nbr-timer {
+  font-size: 1.7em;
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-size: 1.5em;
+  letter-spacing: 4px;
+}
+
+h3, .page-title .subheading {
+  font-size: 1.3em;
+  letter-spacing: 3.5px;
+}
+
+h4, .ft-tabs .tabs-list li a .tab-group .tab-heading, .testimonials-3col .t-item blockquote footer cite, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404 footer cite, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404 footer cite, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p footer cite, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p footer cite, .team-3col .t-item .t-info .t-role, .team-4col .t-item .t-info .t-role, .freelancer-about .t-item .t-info .t-role, .t-join .t-info .t-role, .login-2 .bg-overlay .form-wrapper .form-content .cards-header, .login-2 .bg-overlay .form-wrapper .social-signup .social-card .sc-lead {
+  font-size: 1.07em;
+  letter-spacing: 3px;
+}
+
+h5, .ft-boxed-hover ul li .hover-content .ft-heading, .ft-tabs .tabs-list li a .tab-group .tab-info, .sidebar .comments-widget .widget-item span .widget-comm-title, .comingsoon .content-wrapper .content-inner .cs-timer .item .title-timer, .shop-layout-options span {
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+h6, .progress-group .progress-title,
+.progress-group .progress-value, .accordions-1 .panel .panel-heading .panel-title, .footer-social-links ul li, .footer-contact .contact-info .show-info-link, .footer-contact .contact-info address ul li .adr-heading, .footer-contact .contact-info address .show-map, .footer-litle address ul li .adr-group .adr-heading, .ft-cards .ft-item a, .ft-cards-2 .ft-card-item .ft-content .link-btn, .ft-boxed-hover ul li .hover-content a, .circles-counters .circle-item .circle-text, .circles-counters-dark-bg .circle-item .circle-text, .number-counters .count-wrapper .count-item .count-text, .number-counters-dark-bg .count-wrapper .count-item .count-text, .project-nav nav .nav-btns li a, .pricing-tables .p-table .desc, .blog-post-nav .prev-btn,
+.blog-post-nav .next-btn, .sidebar .tags-widget .tag-list li a, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group span, .contact-1 .contact-wrapper .contact-info-wrapper address .address-group a,
+.contact-1 .contact-wrapper .contact-info-wrapper address .address-group p, .contact-1 .contact-wrapper .contact-info-wrapper address .show-map-link a, .landing-hero .heading-wrapper .cta-btn, .shop-sidebar .filter-widget label, .shop-sidebar-vertical .filter-widget label, .shop-sidebar .tags-widget .tag-list li a, .shop-sidebar-vertical .tags-widget .tag-list li a, .checkout-table tbody tr td:first-child, .prod-reviews .tp-review .tpr-name {
+  font-size: 0.85em;
+  letter-spacing: 2px;
+}
 
 /* ---- White Space ---- */
 .ws-s {

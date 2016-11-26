@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,700,500');
+@import url('https://fonts.googleapis.com/css?family=Jura');
 
 .container {
   width: 80%;
@@ -17,8 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-family: 'jura', sans-serif;
   color: #272727;
 }
 a {
@@ -558,8 +559,13 @@ margin: 0;
 }
 /* Start: Recommended Isotope styles */
 
-.video-container,.map-container,.embed-container
-	{ position:relative; margin:0 0 15px 0;	padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:none; }
+.video-container
+	{ position:relative;
+    margin:0 0 15px 0;
+    padding-bottom:51%;
+    padding-top:30px;
+  
+     border:none; }
 
 
 /**** Isotope Filtering ****/
