@@ -1,6 +1,25 @@
 
 
 
+    <header class="page-title pt-light pt-plax-md-light" data-stellar-background-ratio="0.4">
+     <div class="bg-overlay">
+       <div class="container">
+         <div class="row">
+
+           <div class="col-sm-6">
+             <h1>ZongoBlog</h1>
+            
+           </div>
+           <ol class="col-sm-6 text-right breadcrumb">
+             <li><a href="#">Home</a></li>
+             <li class="active">Blog</li>
+           </ol>
+
+         </div>
+       </div>
+     </div>
+    </header>
+s
 
 
 <div id="blog" class="section container blog-classic">
@@ -55,10 +74,6 @@
                 <!-- Comment 1 -->
                 <%= render @blog.comments %>
               <!-- / .bp-comment -->
-
-
-
-
                 <!-- Leave a comment -->
                 <%= render "comments/form" %>
                 <!-- / .comment-form -->

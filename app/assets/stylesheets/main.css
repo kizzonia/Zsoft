@@ -1933,7 +1933,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-plax-md-light {
-  background: url(../images/pt-bg-2.jpg);
+  background: url("../assets/texture-bw.png");
   background-size: cover;
 }
 
@@ -1948,7 +1948,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-plax-lg-dark {
-  background: url(../images/pt-bg-3.jpg);
+  background: url("../assets/texture-bw.png");
   background-size: cover;
 }
 
@@ -1963,7 +1963,7 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-plax-lg-light {
-  background: url(../images/pt-bg-3.jpg);
+  background: url("../assets/texture-bw.png");
   background-size: cover;
 }
 

@@ -15,11 +15,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require ckeditor/init
 //= require jquery_ujs
 //= require turbolinks
 //= require owl.carousel
 //= require custom-scripts
-//= require ckeditor/init
+
 //= require_tree .
 //= require main
 //= require owl.carousel.min

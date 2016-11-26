@@ -1,9 +1,8 @@
-<section id="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-
+<section class="container section">
 <%= simple_form_for(@project, url: projects_path, html: { class: 'form-horizontal' } )do |f| %>
+<div class="row ws-m">
+  <div class="col-md-offset-2 col-md-8">
+
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
@@ -16,23 +15,22 @@
     </div>
   <% end %>
 
-  <div class="controls">
+  <div class="form-group">
     <%= f.input :name %>
   </div>
-  <div class="controls">
+  <div class="form-group">
     <%= f.input :description, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16 %>
   </div>
-  <div class="controls">
+  <div class="form-group">
     <%= f.input :history, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16 %>
   </div>
-  <div class="controls">
+  <div class="form-group">
     <%= f.input :thumbnail %>
   </div>
-  <div class="controls">
+  <div class="form-group">
     <%= f.submit :submit, class: "btn btn-submit" %>
   </div>
 <% end %>
 </div>
 </div>
-</div>
-</div>
+</section>
