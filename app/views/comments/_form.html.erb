@@ -4,7 +4,7 @@
 <%= simple_form_for ([@blog, @blog.comments.build(params[:blog_id])]) do |f|  %>
 	<div class="col-md-6 no-gap-left">
 		 <%= f.input :name %>
-
+	 </div>
    <div class="col-md-6 no-gap-right">
      <%= f.input :body, placeholder: "Please type your comments", :rows => 16, :cols => 16 %>
    </div>
@@ -13,3 +13,5 @@
   <%= f.submit :submit, class: "btn pull-right " %>
 </div>
     <% end %>
+
+</div>
