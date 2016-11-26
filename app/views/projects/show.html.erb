@@ -1,44 +1,84 @@
 
 
+<!-- ========== Page Title ========== -->
 
-<p id="notice"><%= notice %></p>
+<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+	<div class="container">
+			<div class="row">
 
-        <!-- Page Title -->
-		<div class="section section-breadcrumbs">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h1>Projects Description</h1>
-					</div>
+				<div class="col-sm-6">
+					<h1>Projects</h1>
+					<span class="subheading">Some Of Our Work</span>
 				</div>
+				<ol class="col-sm-6 text-right breadcrumb">
+					<li><%= link_to "Home", root_path %></li>
+					<li class="active"><%= link_to "Projects", projects_path %></li>
+				</ol>
+
 			</div>
 		</div>
+</header>
 
-        <div class="section">
-	    	<div class="container">
-				<div class="row">
-					<!-- Image Column -->
-					<div class="col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-							<%= image_tag @project.thumbnail.url(:medium) %>
-							</div>
-						</div>
-					</div>
-					<!-- End Image Column -->
-					<!-- Project Info Column -->
-					<div class="portfolio-item-description col-sm-6">
-						<h3><%= @project.name %></h3>
-					<%= @project.description %>
-						<ul class="no-list-style">
-							<li><%= @project.history %></li>
-							<li><b>Date:</b> <%= @project.created_at.strftime("%b, %d, %y") %></li>
-							<li><b>Technologies:</b> HTML5, CSS3, jQuery, Ruby, MySQL, Rails, Ajax JavaScript </li>
-						</ul>
-					</div>
-					<!-- End Project Info Column -->
-				</div>
+
+
+<!-- ========== Portfolio Single ========== -->
+
+<section class="section container pfolio-single">
+	<div class="row ws-m">
+
+		<!-- Project Info -->
+		<div class="col-md-3 mb-sm-50 project-info">
+			<h5><%= @project.name %></h5>
+			<ul>
+				<li><h6>Date:</h6><span> <%= @project.created_at.strftime("%b, %d, %y") %> </span></li>
+			</ul>
+		</div>
+
+		<!-- Challenge -->
+		<div class="col-md-offset-1 col-md-4 mb-sm-50">
+			<h5 class="h-alt">The Challenge</h5>
+			<p><%= @project.description %></p>
+		</div>
+
+		<!-- Solution -->
+		<div class="col-md-4">
+			<h5 class="h-alt">The History & Solution</h5>
+			<p><%= @project.history %></p>
+		</div>
+
+	</div><!-- / .row -->
+
+	<!-- Slider -->
+	<div class="row">
+		<div class="col-md-12">
+			<%= image_tag @project.thumbnail.url(:medium) %>
+		</div>
+	</div><!-- / .row -->
+
+</section><!-- / .container -->
+
+
+
+<!-- ========== Project Nav ========== -->
+
+<div class="gray-bg project-nav">
+	<div class="container">
+		<div class="row">
+
+			<nav>
+				<ul class="nav-btns">
+					<li class="prev"><a href="#"><span class="nav-icon linea-arrows-slim-left"></span>  prev project</a></li>
+					<li class="all"><a href="portfolio-fw-3col.html"><span class="nav-icon linea-arrows-squares"></span></a></li>
+					<li class="next"><a href="#">next project <span class="nav-icon linea-arrows-slim-right"></span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</div><!-- / .project-nav -->
+
 
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Back', projects_path %> |
+<%= link_to "Delete", project_path(@project), method: :delete, class: "btn btn-ghost", data: {confirm: "are You sure?" } %>
