@@ -1,53 +1,52 @@
+<!-- ========== Portfolio Boxed - 1 Column ========== -->
 
-
-
-<div class="section section-breadcrumbs">
-			<div class="container">
+			<section class="container section portfolio-layout portfolio-1col-boxed">
 				<div class="row">
-					<div class="col-md-12">
-						<h1>PORTFOLIO & Projects</h1>
+					<header class="sec-heading">
+						<h2>Some of our project</h2>
+						<span class="subheading">Projects That Makes You See The World From Your Palms</span>
+					</header>
+				</div><!-- / .row -->
+
+
+				<div class="row">
+					<div id="pfolio">
+
+						<!-- Item 1 -->
+						  <% @projects.each do |project| %>
+						<figure class="portfolio-item print">
+							<div class="col-md-7 no-gap img-wrapper">
+								<%= image_tag project.thumbnail.url(:medium) %>
+							</div>
+							<figcaption class="col-md-5 no-gap">
+								<h3><%= project.name %></h3>
+								<h5 class="subheading"><%= project.sub_title %></h5>
+								<p><%= raw(project.description) %>.</p>
+
+								<%= link_to 'Veiw projects', project, class: "btn-ghost btn-small view-btn" %>
+							</figcaption>
+						</figure><!-- / .portfolio-item -->
+
+						<% end %>
+					</div><!-- / #pfolio -->
+				</div><!-- / .row -->
+			</section><!-- / .container -->
+
+
+
+			<!-- ========== CTA - Contact Link ========== -->
+
+			<div class="cta-link">
+				<div class="bg-overlay">
+
+					<div class="cta-wrapper">
+						<h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Love to hear from you</h3>
+						<a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
 					</div>
+
 				</div>
-			</div>
-		</div>
-
-        <div class="section">
-	    	<div class="container">
-				<div class="row">
-          <% @projects.each do |project| %>
-					<div class="col-sm-6">
-						<div class="portfolio-item">
-							<div class="portfolio-image">
-								<a href="page-portfolio-item.html"><%= image_tag project.thumbnail.url(:medium) %> </a>
-							</div>
-							<div class="portfolio-info-fade">
-								<ul>
-									<li class="portfolio-project-name"><%= project.name %></li>
-									<li><%= project.description %></li>
-									<li><%= project.history %></li>
-									<li class="read-more"><%= link_to 'Show', project, class: "btn" %></li>
-                  <li><%= link_to 'Edit', edit_project_path(project) %></li>
-              <li>  <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-              <% end %>
-						</div>
-					</div>
-        </div>
+			</div><!-- / .cta-link -->
 
 
-
-
-
-
-
-
-  </tbody>
-</table>
-
-<br>
 
 <%= link_to 'New Project', new_project_path %>

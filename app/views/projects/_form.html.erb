@@ -20,10 +20,10 @@
     <%= f.input :name %>
   </div>
   <div class="controls">
-    <%= f.input :description %>
+    <%= f.input :description, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16 %>
   </div>
   <div class="controls">
-    <%= f.input :history %>
+    <%= f.input :history, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16 %>
   </div>
   <div class="controls">
     <%= f.input :thumbnail %>
