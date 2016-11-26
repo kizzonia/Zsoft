@@ -1,14 +1,24 @@
+<section class="container section">
 <%= simple_form_for(@service) do |f| %>
+<div class="row ws-m">
+  <div class="col-md-offset-2 col-md-8">
+
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :serdescription %>
-    <%= f.input :otherSer %>
-    <%= f.input :otherSerdescription %>
+  <div class="form-group">
+    <%= f.input :title  %>
+  </div>
+  <div class="form-group">
+    <%= f.input :serdescription, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
+  </div>
+  <div class="form-group">
+    <%= f.input :otherSer, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
+  </div>
+  <div class="form-group">
+    <%= f.input :otherSerdescription, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-ghost" %>
   </div>
 <% end %>
