@@ -1,5 +1,19 @@
-<h1>Editing Service</h1>
+<header class="page-title pt-large pt-dark pt-plax-lg-dark" data-stellar-background-ratio="0.4">
+      <div class="container">
+          <div class="row">
 
+            <div class="col-sm-6">
+              <h1> Edit Services</h1>
+              <span class="subheading">Services we provide</span>
+            </div>
+            <ol class="col-sm-6 text-right breadcrumb">
+              <li><%= link_to "Home", root_path %></li>
+              <li class="active"><%= link_to "Services", services_path %></li>
+            </ol>
+          </div>
+
+        </div>
+    </header>
 <%= render 'form' %>
 
 <%= link_to 'Show', @service %> |

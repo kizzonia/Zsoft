@@ -1,24 +1,38 @@
-<p id="notice"><%= notice %></p>
+<header class="page-title pt-large pt-dark pt-plax-lg-dark" data-stellar-background-ratio="0.4">
+      <div class="container">
+          <div class="row">
 
-<p>
-  <strong>Title:</strong>
-  <%= @service.title %>
-</p>
+            <div class="col-sm-6">
+              <h1>Services</h1>
+              <span class="subheading">Services we provide</span>
+            </div>
+            <ol class="col-sm-6 text-right breadcrumb">
+              <li><%= link_to "Home", root_path %></li>
+              <li class="active"><%= link_to "Services", services_path %></li>
+            </ol>
+          </div>
 
-<p>
-  <strong>Serdescription:</strong>
-  <%= @service.serdescription %>
-</p>
+        </div>
+    </header>
 
-<p>
-  <strong>Otherser:</strong>
-  <%= @service.otherSer %>
-</p>
 
-<p>
-  <strong>Otherserdescription:</strong>
-  <%= @service.otherSerdescription %>
-</p>
 
-<%= link_to 'Edit', edit_service_path(@service) %> |
-<%= link_to 'Back', services_path %>
+          <div class="col-md-8 text-center">
+            <figcaption class="col-md-6 no-gap text-center">
+              <h3>  <%= @service.title %></h3>
+            </figcation>
+
+            <p>
+
+              <%= raw(@service.serdescription) %>
+            </p>
+          </br>
+        </div>
+
+
+
+
+<div class="text-center">
+      <%= link_to 'Edit', edit_service_path(@service) %> |
+      <%= link_to 'Back', services_path %>
+    </div>

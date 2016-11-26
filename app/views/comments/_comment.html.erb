@@ -1,20 +1,18 @@
-<p class="posted"><i class="fa fa-clock-o"></i><%= time_ago_in_words(comment.created_at) %> Ago</p><ul class="post-comments">
-    <li>
-      <div class="comment-wrapper">
-        	<div class="comment-author"><%= comment.name %></div>
-          <%= comment.body %>
-        <!-- Comment Controls -->
-        <div class="comment-actions">
-          <span class="comment-date">  <%= time_ago_in_words(comment.created_at) %> Ago</span>
 
-        		<hr>
-
-        			<p><%= link_to 'Delete', [comment.blog, comment],method: :delete, class: "btn btn-xs btn-default", data: { confirm: 'Are you sure?' }  %>
-        			</p>
-
-        </div>
-      </div>
-    </li>
+<div class="bp-comment">
+  <div class="comment-avatar"><i class="fa fa-user"></i></div>
+  <div class="comment-info">
+    <h6 class="comment-name"><%= comment.name %></h6>
+    <span class="comment-time">on <%= time_ago_in_words(comment.created_at) %></span>
+    <button class="comment-replay-btn"><i class="fa fa-mail-reply-all"></i> <%= link_to 'Delete', [comment.blog, comment],method: :delete, class: "btn btn-xs btn-default", data: { confirm: 'Are you sure?' }  %></button>
+  </div>
+  <p class="comment-content">  <%= comment.body %></p>
+</div>
 
 
-  </ul>
+
+
+
+
+
+        	
