@@ -51,74 +51,79 @@
 
 		<!-- Footer Section Start -->
 
-    		<footer class="footer-distributed">
+    <footer class="footer-widgets">
+<div class="container">
+  <div class="row section">
 
-    			<div class="footer-left">
+    <!-- About Us -->
+    <div class="col-md-3 col-sm-6 mb-sm-100">
+      <div class="widget about-widget">
+        <h5 class="header-widget">About the company</h5>
+        <strong>Zongosoft</strong> is an IT solutions company with a goal to bridge the digital divide between seervice providers and consumers with an overall aim of building a cluster of satisfied clients.
+      </p>
+        <ul class="social-links">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
 
-    				<h3><%= link_to root_path do %>
-              <%= image_tag "Logo.png", class: "img-responsive col-md-3" %>
-              <% end %></h3>
+    <!-- Instagram Feed -->
+    <div class="col-md-3 col-sm-6 mb-sm-100">
+      <div class="widget twitter-widget">
+        <h5 class="header-widget">this is </h5>
+        <ul>
 
-    				<p class="footer-links">
-    					<a href="#">Home</a><br>
-    					·
-    					<a href="#">Blog</a><br>
-    					·
-    					<a href="#">Projects</a><br><br>
-    					·
-    					<a href="#">About</a><br>
-    					·
-    					<a href="#">Faq</a><br>
-    					·
-    					<a href="#">Contact</a>
-    				</p>
+          <li><%= image_tag "Logo.png", class: "col-md-3 img-responsive" %></li>
+        </ul>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
 
-    				<p class="footer-company-name">&copy;Copyright <strong> Zongonsoft</strong> · All Rights Reserved ·Powered by <strong>Zongonsoft</strong></p>
-    			</div>
-          
+    <!-- Twitter Feed -->
+    <div class="col-md-3 col-sm-6 mb-sm-100">
+      <div class="widget twitter-widget">
+        <h5 class="header-widget"><i class="fa fa-phone"></i></h5>
+        <ul>
 
-    			<div class="footer-center">
+          <li>
+            Head Office</strong> Mile 17, Buea,Cameroon .</span>
+          </li>
 
-    				<div>
-    					<i class="fa fa-map-marker"></i>
-    					<p><span><strong>Head Office</strong> Mile 17, Buea,Cameroon .</span></p>
-    				</div>
+          <li>
+            +1 (508) 332-6834
+              <li>
+            +234 816 186 9777
+          </li>
+              <li>
+            +237 678 842 986
+          </li>
 
-    				<div>
-    					<i class="fa fa-phone"></i>
-    					<p>+1 ((508) 332-6834</p>
+        </ul>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
 
-              <p>+234 816 186 9777</p>
+    <!-- Newsletter -->
+    <div class="col-md-3 col-sm-6">
+      <div class="widget newsletter-widget">
+        <h5 class="header-widget">Newsletter</h5>
 
-              <p>+237 678 842 986</p>
-            </div>
+        <form action="mailto:support@zongosoft.com">
+          <div class="form-group">
+            <input type="email" name="w-newssletter" placeholder="Join our newsletter">
+            <button type="submit"><i class="fa fa-send-o"></i></button>
+          </div>
+        </form>
 
-    				<div>
-    					<i class="fa fa-envelope"></i>
-    					<p><a href="mailto:support@zongosoft.com">support@zongosoft.com</a></p>
-    				</div>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
 
-    			</div>
+  </div><!-- / .row -->
+</div><!-- / .container -->
 
-    			<div class="footer-right">
 
-    				<p class="footer-company-about">
-    					<span>About the company</span>
-    					<strong>Zongosoft</strong> is an IT solutions company with a goal to bridge the digital divide between seervice providers and consumers with an overall aim of building a cluster of satisfied clients.
-    				</p>
-
-    				<div class="footer-icons">
-
-    					<a href="#"><i class="fa fa-facebook"></i></a>
-    					<a href="#"><i class="fa fa-twitter"></i></a>
-    					<a href="#"><i class="fa fa-linkedin"></i></a>
-    					<a href="#"><i class="fa fa-github"></i></a>
-
-    				</div>
-
-    			</div>
-
-    		</footer>
 
 </body>
 </html>
