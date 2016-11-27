@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @about.name %>
+</p>
+
+<p>
+  <strong>Portfolio:</strong>
+  <%= @about.portfolio %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @about.website %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @about.email %>
+</p>
+
+<p>
+  <strong>Signature:</strong>
+  <%= @about.signature %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @about.contact %>
+</p>
+
+<p>
+  <strong>Hobby:</strong>
+  <%= @about.hobby %>
+</p>
+
+<%= link_to 'Edit', edit_about_path(@about) %> |
+<%= link_to 'Back', abouts_path %>
