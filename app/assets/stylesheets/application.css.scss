@@ -13,19 +13,14 @@
  *= require font-awesome
  *= require_tree .
  *= require_self
- *= require owl.carousel
- *= require owl.theme
- *= require owl.transitions
 
  */
  @import "bootstrap";
 @import "main";
  @import "animate.min";
- @import "bootstrap";
+ @import "bootstrap.min";
  @import "font-awesome";
- @import "owl.carousel";
  @import "footer";
-
 @import "responsive";
 @import "slick";
  @import "styles";
