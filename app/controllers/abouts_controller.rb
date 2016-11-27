@@ -69,6 +69,6 @@ class AboutsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def about_params
-      params.require(:about).permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby)
+      params.require(:about).permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby, :thumbnail)
     end
 end
