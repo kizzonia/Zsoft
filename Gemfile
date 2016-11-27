@@ -16,8 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'sendgrid'
-gem 'owlcarousel-rails'
-gem 'paloma', '~> 5.0.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -33,13 +32,14 @@ gem 'nifty-attachments', '~> 1.0', '>= 1.0.4'
 gem 'momentjs-rails'
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'wow-rails'
+
 gem 'ckeditor'
 gem "font-awesome-rails"
 gem 'aws-sdk', '< 2.0'
 gem 'aws-sdk-v1', '~> 1.66'
 gem 'devise', '~> 3.5.7'
-gem 'animate-rails'
+gem 'will_paginate', '~> 3.0.7'
+
 gem 'spring'
 gem 'puma'
 gem "pg"
