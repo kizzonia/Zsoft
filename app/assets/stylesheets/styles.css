@@ -157,7 +157,7 @@ border-color: #132125;
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  height: 70px;
+  height: auto;
   padding: 22px 15px 21px;
 }
 @media only screen and (min-width: 768px) {
