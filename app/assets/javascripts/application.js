@@ -18,12 +18,12 @@
 //= require ckeditor/init
 //= require jquery_ujs
 //= require turbolinks
-//= require owl.carousel
+
 //= require custom-scripts
 
 //= require_tree .
 //= require main
-//= require owl.carousel.min
+
 //= require jquery.isotope.min
 
 //= require mousescroll

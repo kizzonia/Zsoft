@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Abouts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Portfolio</th>
+      <th>Website</th>
+      <th>Email</th>
+      <th>Signature</th>
+      <th>Contact</th>
+      <th>Hobby</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @abouts.each do |about| %>
+      <tr>
+        <td><%= about.name %></td>
+        <td><%= about.portfolio %></td>
+        <td><%= about.website %></td>
+        <td><%= about.email %></td>
+        <td><%= about.signature %></td>
+        <td><%= about.contact %></td>
+        <td><%= about.hobby %></td>
+        <td><%= link_to 'Show', about %></td>
+        <td><%= link_to 'Edit', edit_about_path(about) %></td>
+        <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New About', new_about_path %>

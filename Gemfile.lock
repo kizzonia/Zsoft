@@ -104,16 +104,12 @@ GEM
     mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
-    momentjs-rails (2.15.1)
-      railties (>= 3.1)
     multi_json (1.12.1)
     mysql2 (0.4.5-x86-mingw32)
     nifty-attachments (1.0.4)
     nokogiri (1.6.8.1-x86-mingw32)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
-    owlcarousel-rails (1.1.3.3)
-      jquery-rails
     paloma (5.0.0)
     paperclip (5.1.0)
       activemodel (>= 4.2.0)
@@ -197,6 +193,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    will_paginate (3.0.7)
     wow-rails (0.0.1)
 
 PLATFORMS
@@ -214,10 +211,8 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
-  momentjs-rails
   mysql2 (>= 0.3.13, < 0.5)
   nifty-attachments (~> 1.0, >= 1.0.4)
-  owlcarousel-rails
   paloma (~> 5.0.0)
   paperclip
   pg
@@ -232,6 +227,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+  will_paginate (~> 3.0.7)
   wow-rails
 
 BUNDLED WITH
