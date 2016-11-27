@@ -18,13 +18,9 @@
 //= require ckeditor/init
 //= require jquery_ujs
 //= require turbolinks
-
 //= require custom-scripts
-
 //= require_tree .
 //= require main
-
 //= require jquery.isotope.min
-
 //= require mousescroll
 //= require jquery.inview.min
