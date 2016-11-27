@@ -37,13 +37,13 @@
 		<!-- Challenge -->
 		<div class="col-md-offset-1 col-md-4 mb-sm-50">
 			<h5 class="h-alt">The Challenge</h5>
-			<p><%= @project.description %></p>
+			<%= raw(@project.description) %>
 		</div>
 
 		<!-- Solution -->
 		<div class="col-md-4">
 			<h5 class="h-alt">The History & Solution</h5>
-			<p><%= @project.history %></p>
+			<p><%= raw(@project.history) %></p>
 		</div>
 
 	</div><!-- / .row -->
