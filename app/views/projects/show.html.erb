@@ -52,7 +52,7 @@
 
 
 </section><!-- / .container -->
-<div class="container"
+<div class="container">
 	<div class="row">
 		<div class="col-md-8 text-center">
 			<%= image_tag @project.thumbnail.url(:medium), class: "text-center img-responsive col-md-8 " %>
@@ -77,6 +77,16 @@
 		</div>
 	</div>
 </div><!-- / .project-nav -->
+<div class="cta-link">
+	<div class="bg-overlay">
+
+		<div class="cta-wrapper">
+			<h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Love to hear from you</h3>
+			<%= link_to "Get in touch", new_contact_path, class: "btn btn-light btn-large wow fadeIn" %>
+		</div>
+
+	</div>
+</div><!-- / .dark-bg .cta-link -->
 
 
 

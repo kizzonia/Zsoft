@@ -1,29 +1,23 @@
-<section id="content">
-  <div class="container">
-    <div class="row">
-      <h1 class="section-title wow fadeIn" data-wow-delay=".2s"><span>Contact</span> Us</h1>
-      <div class="col-lg-8">
-
 
 <%= simple_form_for(@contact, url: contacts_path) do |f| %>
   <%= f.error_notification %>
 
 
-      <div class="controls">
-        <%= f.input :name  %>
+      <div class="form-group">
+        <%= f.input :name, placeholder: " Type Your Name "%>
 
       </div>
-      <div class="controls">
-        <%= f.input :email %>
+      <div class="form-group">
+        <%= f.input :email, placeholder: "Type Your E-mail" %>
       </div>
 
   </div>
-  <div class="controls col-md-8 ">
-    <%= f.input :body, placeholder: "tell us about it ", :rows => 16, :cols => 8 %>
+  <div class="form-group">
+    <%= f.input :body, placeholder: "Tell Us About It ", :rows => 16, :cols => 8 %>
   </div>
 
   <div class=" controls col-md-8 ">
-      <%= f.submit :submit, class: "btn btn-common" %>
+      <%= f.submit :submit, class: "btn btn-ghost" %>
   </div>
 <% end %>
 

@@ -1,39 +1,68 @@
-<p id="notice"><%= notice %></p>
+<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+	<div class="container">
+			<div class="row">
 
-<p>
-  <strong>Name:</strong>
-  <%= @about.name %>
-</p>
+				<div class="col-sm-6">
+					<h1>Meet Us</h1>
+					<span class="subheading">Our Amazing Team</span>
+				</div>
+				<ol class="col-sm-6 text-right breadcrumb">
+					<li><%= link_to "Home", root_path %></li>
+					<li class="active"><%= link_to "About us", abouts_path %></li>
+				</ol>
 
-<p>
-  <strong>Portfolio:</strong>
-  <%= @about.portfolio %>
-</p>
+			</div>
+		</div>
+</header>
 
-<p>
-  <strong>Website:</strong>
-  <%= @about.website %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @about.email %>
-</p>
 
-<p>
-  <strong>Signature:</strong>
-  <%= @about.signature %>
-</p>
 
-<p>
-  <strong>Contact:</strong>
-  <%= @about.contact %>
-</p>
 
-<p>
-  <strong>Hobby:</strong>
-  <%= @about.hobby %>
-</p>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center">
 
-<%= link_to 'Edit', edit_about_path(@about) %> |
-<%= link_to 'Back', abouts_path %>
+                <div class="col-md-4 text-center">
+                  <%= image_tag @about.thumbnail.url(:medium), class: "img-responsive post-img" %>
+                </div>
+              <h3 class="text-center">
+                <%= @about.name %>
+              </h3>
+
+                <br>
+                <hr>
+
+                <h3 class="text-center"> Portfolio </h3>
+                  <br>
+
+                <p>
+                  <%= @about.portfolio %>
+                </p>
+                <br>
+
+                <h3 class="text-center"> Hobby </h3>
+                <p>  <%= @about.hobby %></p>
+
+                  <div class="col-md-6">
+                    <ul>
+                      <li><strong>Website:</strong> <%= @about.website %></li>
+                      <li>  <strong>Email:</strong>   <%= @about.email %></li>
+                      <li> <strong>Signature & Role:</strong>   <%= @about.signature %> </li>
+                      <li><strong>Contact:</strong> <%= @about.contact %> </li>
+
+                    </ul>
+                  </div>
+
+
+        <div class="text-center">
+        <p>  <%= link_to 'Edit', edit_about_path(@about), class: "btn btn-light" %> |
+          <%= link_to 'Back', abouts_path, class: "btn btn-light" %>|
+          <%= link_to "Delete", about_path(@about), method: :delete, class: "btn btn-ghost", data: {confirm: "Are you sure...?" } %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

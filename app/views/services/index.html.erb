@@ -80,15 +80,15 @@
 
 
     <div class="cta-link">
-          <div class="bg-overlay">
+      <div class="bg-overlay">
 
-            <div class="cta-wrapper">
-              <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Love to hear from you</h3>
-              <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
-            </div>
+        <div class="cta-wrapper">
+          <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Love to hear from you</h3>
+          <%= link_to "Get in touch", new_contact_path, class: "btn btn-light btn-large wow fadeIn" %>
+        </div>
 
-          </div>
-        </div><!-- / .cta-link -->
+      </div>
+    </div><!-- / .dark-bg .cta-link -->
 
         <div class="text-center" >
         <%= link_to 'New Service', new_service_path, class: "btn btn-ghost" %>

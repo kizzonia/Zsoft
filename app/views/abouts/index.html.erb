@@ -1,39 +1,158 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Abouts</h1>
+<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+	<div class="container">
+			<div class="row">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Portfolio</th>
-      <th>Website</th>
-      <th>Email</th>
-      <th>Signature</th>
-      <th>Contact</th>
-      <th>Hobby</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+				<div class="col-sm-6">
+					<h1>Meet Us</h1>
+					<span class="subheading">Our Amazing Team</span>
+				</div>
+				<ol class="col-sm-6 text-right breadcrumb">
+					<li><%= link_to "Home", root_path %></li>
+					<li class="active"><%= link_to "About us", abouts_path %></li>
+				</ol>
+
+			</div>
+		</div>
+</header>
+  <!-- ========== Team - 4 columns ========== -->
+
+  <div class="gray-bg">
+    <section class="container section team-4col">
+      <div class="row">
+
+        <header class="text-center">
+          <h2>Meet the team</h2>
+          <span class="subheading">We are creative professionals</span>
+        </header>
+      <% @abouts.each do |about| %>
+        <!-- Member 1 -->
+        <div class="col-lg-3 col-md-6 mb-sm-50">
+          <div class="t-item">
+
+            <!-- Image -->
+            <div class="t-image">
+            <%= image_tag about.thumbnail.url(:medium), class: "img-responsive" %>
+              <div class="t-description">
+                <div class="content-wrapper">
+                  <h4 class="h-alt">Hello!</h4>
+                  <p>About Me...?.</p>
+                  <%= link_to "Veiw Profle", about, class: "btn btn-small" %>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info -->
+            <div class="t-info">
+              <h4 class="t-name"><%= about.name %></h4>
+              <span class="t-role"><%= about.signature %></span>
+              <ul class="social-links">
+
+                <li><%= about.email %></li>
+              </ul>
+            </div>
+
+          </div><!-- / .t-item -->
+        </div><!-- / .col-lg-3 -->
+
+        <% end %>
+
+        <!-- Join -->
+        <div class="col-lg-3 col-md-6">
+          <div class="t-join">
+
+            <!-- Image -->
+            <div class="t-image">
+              <i class="fa fa-user bg-icon"></i>
+              <div class="t-description">
+                <h4 class="h-alt">Apply Now</h4>
+                <p>Want to be part of us...? Apply and fill the form.</p>
+              </div>
+            </div>
+
+            <!-- Info -->
+            <div class="t-info">
+              <h4 class="t-name">You?</h4>
+              <span class="t-role">A Tech Lover</span>
+              <button class="btn btn-small" type="file">send cv</button>
+            </div>
+
+          </div><!-- / .t-item -->
+        </div><!-- / .col-lg-3 -->
+
+
+      </div><!-- / .row -->
+    </section><!-- / .contianer -->
+  </div><!-- / .gray-bg -->
+
+
+
+
+  <!-- ========== Feature ========== -->
+
+  <section class="container ft-centered">
+    <div class="row section">
+
+      <header class="sec-heading">
+        <h2>Why chose us</h2>
+        <span class="subheading">We provide high quality services</span>
+      </header>
+
+      <!-- Item 1 -->
+      <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-circle-overlay">
+        <span class="et-tools"></span>
+        <h5>Web Design</h5>
+        <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-circle-overlay">
+        <span class="et-mobile"></span>
+        <h5>iOS Development</h5>
+        <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-circle-overlay">
+        <span class="et-anchor"></span>
+        <h5>Branding</h5>
+        <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-md-3 col-sm-6 mb-sm-50 ft-item ft-circle-overlay">
+        <span class="et-linegraph"></span>
+        <h5>Marketing</h5>
+        <p>Lorem ipsum dolor sit amet, ete elit consectetur adipisicing. Omnis quae, ipsam impedit eius, vero.</p>
+      </div>
+
+    </div><!-- / .row -->
+    <hr>
+  </section><!-- / .container .ft-frames -->
+
+
+
+  <!-- ========== CTA - Contact Link ========== -->
+
+  <div class="cta-link">
+    <div class="bg-overlay">
+
+      <div class="cta-wrapper">
+        <h3 class="h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Love to hear from you</h3>
+        <a href="#contact" class="btn btn-light btn-large wow fadeIn" data-wow-delay=".3s" data-wow-duration="1s">Get in touch</a>
+      </div>
+
+    </div>
+  </div><!-- / .dark-bg .cta-link -->
+
+
+
 
   <tbody>
-    <% @abouts.each do |about| %>
-      <tr>
-        <td><%= about.name %></td>
-        <td><%= about.portfolio %></td>
-        <td><%= about.website %></td>
-        <td><%= about.email %></td>
-        <td><%= about.signature %></td>
-        <td><%= about.contact %></td>
-        <td><%= about.hobby %></td>
-        <td><%= link_to 'Show', about %></td>
-        <td><%= link_to 'Edit', edit_about_path(about) %></td>
-        <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New About', new_about_path %>
+<%= link_to 'New team member', new_about_path %>
