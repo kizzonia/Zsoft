@@ -74,10 +74,15 @@
     <!-- Instagram Feed -->
     <div class="col-md-3 col-sm-6 mb-sm-100">
       <div class="widget twitter-widget">
-        <h5 class="header-widget">this is </h5>
+        <h5 class="header-widget">Zongosoft</h5>
         <ul>
-
-          <li><%= image_tag "Logo.png", class: "col-md-3 img-responsive" %></li>
+<li class="scroll"><%= link_to "Contact Us", new_contact_path %></li>
+<li class="scroll active"><%= link_to "Home", root_path %></li>
+<li class="scroll">  <%= link_to "Services", services_path %></li>
+<li class="scroll"><%= link_to "About us", abouts_path %></li>
+<li class="scroll"><%= link_to "Projects", projects_path %></li>
+<li class="scroll">  <%= link_to "Blog", blogs_path %>  </li>
+          <P>
         </ul>
       </div><!-- / .widget -->
     </div><!-- / .col-md-3 -->
