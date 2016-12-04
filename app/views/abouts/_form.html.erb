@@ -1,13 +1,18 @@
-
 <section class="container section">
-<%= simple_form_for(@about) do |f| %>
+<%= simple_form_for(@about, url: abouts_path, html: { class: 'form-horizontal' }) do |f| %>
 <div class="row ws-m">
   <div class="col-md-offset-2 col-md-8">
-  <%= f.error_notification %>
 
-  <div class="form-group">
-    <%= f.input :name, placeholder: "Name anmd Title " %>
-  </div>
+  <% if @about.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@about.errors.count, "error") %> prohibited this blog from being saved:</h2>
+      <ul>
+      <% @about.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
   <div class="form-group">
     <%= f.input :portfolio, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
   </div>
@@ -27,7 +32,7 @@
     <%= f.input :hobby, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
-    <%= f.input :thumbnail, as: :file %>
+    <%= f.input :thumbnail, as: :file, paceholder: "Add display picture" %>
   </div>
 
   <div class="form-group">

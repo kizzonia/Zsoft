@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 #gem 'therubyracer', platforms: :ruby
-gem 'rails_12factor'
+#gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'sendgrid'
 
@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
-gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
+gem 'paperclip'#, :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem 'nifty-attachments', '~> 1.0', '>= 1.0.4'
 
 gem 'momentjs-rails'
@@ -41,7 +41,7 @@ gem 'devise', '~> 3.5.7'
 gem 'will_paginate', '~> 3.0.7'
 
 gem 'spring'
-gem 'puma'
+#gem 'puma'
 gem "pg"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

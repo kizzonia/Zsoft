@@ -1,3 +1,25 @@
+
+
+	<div class="row">
+		<div class="col-md-3 col-sm-3 pull-left">
+			<div class="sidebar-nav sidebar">
+				<ul>
+					<li class="active"><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
+					<li><%= link_to "New Project", new_project_path, id: "newProject" %></li>
+        	<li><%= link_to "Edit Project", edit_project_path %></li>
+          <li><%= link_to "New service", new_service_path %></li>
+          <li><%= link_to "Edit Service", edit_service_path %></li>
+          <li><%= link_to "view members", abouts_path(@about) %></li>
+          <li><%= link_to "new members", new_about_path %></li>
+					<li><%= link_to "Edit MyProfile", edit_user_registration_path %></li>
+          <br>
+          <li><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
+					<li>view job offers </l>
+					</ul>
+				</ul>
+			</div>
+		</div>
+<div class="col-md-9 col-sm-9">
 <header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
 	<div class="container">
 			<div class="row">
@@ -16,6 +38,5 @@
 </header>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @about %> |
-<%= link_to 'Back', abouts_path %>
+</div>
+</div>

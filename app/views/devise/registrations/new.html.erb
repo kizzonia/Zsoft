@@ -1,17 +1,79 @@
-<h2>Sign up</h2>
+<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+	<div class="container">
+			<div class="row">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
+				<div class="col-sm-6">
+					<h1>Create New Account</h1>
+					<span class="subheading">New User</span>
+				</div>
+				<ol class="col-sm-6 text-right breadcrumb">
+					<li><%= link_to "Home", root_path %></li>
+					<li class="active"><%= link_to "Register", new_user_registraions_path %></li>
+				</ol>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
-  </div>
+			</div>
+		</div>
+</header>
+<div class="login-1">
+  <div class="bg-overlay">
 
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
 
-<%= render "devise/shared/links" %>
+          <div class="panel bottom-panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#login-accordion" href="#register-login-page-2" aria-expanded="false" aria-controls="register-login-page-2">
+                  Register account
+                </a>
+              </h4>
+            </div>
+            <div id="register-login-page-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+
+                <div class="form-register">
+                    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)), html: { class: 'form-horizontal' }) do |f| %>
+                      <%= f.error_notification %>
+
+                      <div class="form-group col-md-6 no-gap-left">
+                        <%= f.input :first_name, required: true, autofocus: true, class: "form-control" %>
+                      </div>
+                        <div class="form-group col-md-6 no-gap-right">
+                        <%= f.input :last_name, required: true, autofocus: true, class: "form-control" %>
+                      </div>
+                      <div class="form-group">
+                        <%= f.input :position, required: true, autofocus: true, class: "form-control" %>
+                      </div>
+                      <div class="form-group">
+                        <%= f.input :email, required: true, autofocus: true %>
+                      </div>
+                      <div class="form-group">
+                        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+                      </div>
+                      <div class="form-group">
+                        <%= f.input :password_confirmation, required: true %>
+                      </div>
+                      <div class="form-group col-md-6 no-gap-left">
+                        <%= f.input :facebook, required: false, autofocus: true, class: "form-control" %>
+                      </div>
+                      <div class="form-group col-md-6 no-gap-right">
+                        <%= f.input :twitter, required: false, autofocus: true, class: "form-control" %>
+                      </div>
+                        <%= f.input :phone, required: true, autofocus: true, class: "form-control" %>
+                      </div>
+
+                      <div class="form-group">
+                        <%= f.button :submit, "Sign up", class: "btn" %>
+                      </div>
+                    <% end %>
+
+                    <%= render "devise/shared/links" %>
+                  </div><!-- / .panel-body -->
+                </div><!-- / .panel-collapse -->
+              </div><!-- / .panel -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,27 @@
+
+<section>
+<!-- left side start-->
+<div class="left-side sticky-left-side">
+
+  <!--logo and iconic logo start-->
+  <div class="logo">
+    <h1><a href="index.html">Easy <span>Admin</span></a></h1>
+  </div>
+  <div class="logo-icon text-center">
+    <a href="index.html"><i class="lnr lnr-home"></i> </a>
+  </div>
+
+  <!--logo and iconic logo end-->
+  <div class="left-side-inner">
+
+    <!--sidebar nav start-->
+      <ul class="nav nav-pills nav-stacked custom-nav">
+        <li class="active"><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
+        <li><%= link_to "New Project", new_project_path, id: "newProject" %></li>
+        <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+        <li>view job offers </l>
+      </ul>
+    <!--sidebar nav end-->
+  </div>
+</div>
+<!-- left side end-->

@@ -1,15 +1,65 @@
-<h2>Log in</h2>
+<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+	<div class="container">
+			<div class="row">
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
+				<div class="col-sm-6">
+					<h1>Login To Your Account</h1>
+					<span class="subheading">New Project</span>
+				</div>
+				<ol class="col-sm-6 text-right breadcrumb">
+					<li><%= link_to "Home", root_path %></li>
+					<li class="active"><%= link_to "Login", new_user_sessions_path %></li>
+				</ol>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
+			</div>
+		</div>
+</header>
+<div class="login-1">
+  <div class="bg-overlay">
 
-<%= render "devise/shared/links" %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+
+          <!-- Log in -->
+          <div class="panel-group" id="login-accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel top-panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#login-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Login to your account
+                  </a>
+
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+
+                  <div class="form-login">
+                  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)), html: { class: 'form-horizontal' }) do |f| %>
+                    <div class="form-group">
+                      <%= f.input :email, required: true, autofocus: true, class: "form-control" %>
+                    </div>
+                      <div class="form-group">
+                      <%= f.input :password, required: true, class: "form-control" %>
+                    </div>
+                      <div class="form-group">
+                      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+                    </div>
+
+                    <div class="form-group">
+                      <%= f.button :submit, "Log in", class: "btn" %>
+                    </div>
+                  <% end %>
+
+                  <%= render "devise/shared/links" %>
+                </div><!-- / .form-wrapper -->
+
+                  </div><!-- / .panel-body -->
+                </div><!-- / .panel-collapse -->
+              </div><!-- / .panel -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,27 +1,86 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= f.error_notification %>
+  <header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+  <div class="container">
+  		<div class="row">
+  			<div class="col-sm-6">
+  				<h1>Edit Account</h1>
+  			</div>
+  			<ol class="col-sm-6 text-right breadcrumb">
+  				<li><%= link_to "Home", root_path %></li>
+  				<li class="active"><%= link_to "Register", new_user_registraions_path %></li>
+  			</ol>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+  		</div>
+  	</div>
+  </header>
+  <div class="login-1">
+  <div class="bg-overlay">
 
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-    <% end %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
 
-    <%= f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false %>
-    <%= f.input :password_confirmation, required: false %>
-    <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true %>
-  </div>
+          <div class="panel bottom-panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#login-accordion" href="#register-login-page-2" aria-expanded="false" aria-controls="register-login-page-2">
+                  Edit <%= resource_name.to_s.humanize %>
+                </a>
+              </h4>
+            </div>
+            <div id="register-login-page-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+          <div class="form-register">
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-horizontal' }) do |f| %>
+          <%= f.error_notification %>
+          <div class="form-group col-md-6 no-gap-left">
+            <%= f.input :first_name, required: true, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="form-group col-md-6 no-gap-right">
+            <%= f.input :last_name, required: true, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.input :position, required: true, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.input :email, required: true, autofocus: true %>
+          </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Update" %>
-  </div>
-<% end %>
+            <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+            <% end %>
+          <div class="form-group">
+            <%= f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false %>
+          </div>
+          <div class="form-group">
+            <%= f.input :password_confirmation, required: false %>
+          </div>
+          <div class="form-group">
+            <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true %>
+          </div>
+          <div class="form-group col-md-6 no-gap-left">
+              <%= f.input :facebook, required: false, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="form-group col-md-6 no-gap-right">
+              <%= f.input :twitter, required: false, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="form-group"
+              <%= f.input :phone, required: true, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="form-group">
+              <%= f.button :submit, "Update", class: "btn" %>
+            </div>
+          <% end %>
 
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+            <p class="btn btn-warning text-center">Unhappy?
+              <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+            </p>
+          </div>
+          </div><!-- / .panel-body -->
+          </div><!-- / .panel-collapse -->
+          </div><!-- / .panel -->
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
