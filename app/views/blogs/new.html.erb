@@ -5,15 +5,13 @@
 				<ul>
 					<li class="active"><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
 					<li><%= link_to "New Project", new_project_path, id: "newProject" %></li>
-					<li><%= link_to "Edit Project", edit_project_path %></li>
-					<li><%= link_to "New service", new_service_path %></li>
-					<li><%= link_to "Edit Service", edit_service_path %></li>
-					<li><%= link_to "view members", abouts_path %></li>
-					<li><%= link_to "new members", new_about_path %></li>
+          <li><%= link_to "New service", new_service_path %></li>
+          <li><%= link_to "view members", abouts_path %></li>
+          <li><%= link_to "new members", new_about_path %></li>
 					<li><%= link_to "Edit MyProfile", edit_user_registration_path %></li>
-					<br>
-					<li><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
-					<li>view job offers </l>
+          <br>
+          <li><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
+					<li>view job offers </li>
 					</ul>
 				</ul>
 			</div>
