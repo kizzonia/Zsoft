@@ -26,6 +26,9 @@ module Zongosoft
      config.serve_static_assets = true
      config.assets.precompile += %w(*.js)
     config.active_record.raise_in_transactional_callbacks = true
-  
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+        config.assets.precompile += Ckeditor.assets
+        config.assets.precompile += %w(ckeditor/*)
+
   end
 end
