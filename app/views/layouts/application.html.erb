@@ -37,18 +37,18 @@
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">AdminBoard <span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <div class="row">
-                              <div class="col-lg-6 mb-sm-30">
+                              <div class="col-md-8 mb-sm-80">
                                 <li class="dropdown-header">Admin Board</li>
                                 <li role="separator" class="divider"></li>
-                                <li class="active"><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
-                      					<li><%= link_to "New Project", new_project_path, id: "newProject" %></li>
-                                <li ><%= link_to "New service", new_service_path %></li>
-                                <li><%= link_to "view members", abouts_path %></li>
-                                <li><%= link_to "new members", new_about_path %></li>
-                      					<li><%= link_to "Edit MyProfile", edit_user_registration_path %></li>
-                                <br>
-                                <li><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
-                      					<li>view job offers </li>
+                                <li class="scroll"><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
+                      					<li class="scroll "><%= link_to "New Project", new_project_path, id: "newProject" %></li>
+                                <li class="scroll "><%= link_to "New service", new_service_path %></li>
+                                <li class="scroll "><%= link_to "view members", abouts_path %></li>
+                                <li class="scroll "><%= link_to "new members", new_about_path %></li>
+                      					<li class="scroll "><%= link_to "Edit MyProfile", edit_user_registration_path %></li>
+
+                                <li class="scroll "><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
+                      					<li class="scroll ">view job offers </li>
                               </div>
                             </div><!-- / .row -->
                           </ul><!-- / .dropdown-menu -->
