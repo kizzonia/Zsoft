@@ -126,9 +126,12 @@
 
           <li>
             +1 (508) 332-6834
+            <% if !user_signed_in? %>
               <li>
-            +234 816 186 9777
+            <%= link_to "+234 816 186 9777", new_user_session_path %>
+
           </li>
+          <% end %>
               <li>
             +237 678 842 986
           </li>
