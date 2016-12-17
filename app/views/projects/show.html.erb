@@ -89,7 +89,6 @@
 </div><!-- / .dark-bg .cta-link -->
 
 
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %> |
+<% if user_signed_in? %>
 <%= link_to "Delete", project_path(@project), method: :delete, class: "btn btn-ghost", data: {confirm: "are You sure?" } %>
+<% end %>

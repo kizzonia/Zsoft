@@ -32,12 +32,23 @@
                       </div>
                   <div class="collapse navbar-collapse navbar-right">
                       <ul class="nav navbar-nav">
+
+                          <% if user_signed_in? %>
+
+                        <li>  <%= link_to admins_panel_path, do %>
+                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Admin Board</a>
+                          <% end %>
+                        </li>
+                        <li> <%= link_to "Sign Out", destroy_user_session_path %></li>
+                          <% else %>
                           <li class="scroll active"><%= link_to "Home", root_path %></li>
                           <li class="scroll">  <%= link_to "Services", services_path %></li>
                           <li class="scroll"><%= link_to "About us", abouts_path %></li>
                           <li class="scroll"><%= link_to "Projects", projects_path %></li>
                           <li class="scroll">  <%= link_to "Blog", blogs_path %>  </li>
                           <li class="scroll"><%= link_to "Contact Us", new_contact_path %></li>
+                          <% end %>
+
                       </ul>
                   </div>
               </div><!--/.container-->
@@ -47,7 +58,12 @@
   <!-- NavBar-->
 
 <%= yield %>
-
+<script>
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+  });
+  </script>
 
 		<!-- Footer Section Start -->
 

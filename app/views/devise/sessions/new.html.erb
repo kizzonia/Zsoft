@@ -8,7 +8,7 @@
 				</div>
 				<ol class="col-sm-6 text-right breadcrumb">
 					<li><%= link_to "Home", root_path %></li>
-					<li class="active"><%= link_to "Login", new_user_sessions_path %></li>
+					<li class="active"><%= link_to "Login" %></li>
 				</ol>
 
 			</div>
@@ -36,7 +36,7 @@
                 <div class="panel-body">
 
                   <div class="form-login">
-                  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)), html: { class: 'form-horizontal' }) do |f| %>
+                  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'form-horizontal' }) do |f| %>
                     <div class="form-group">
                       <%= f.input :email, required: true, autofocus: true, class: "form-control" %>
                     </div>

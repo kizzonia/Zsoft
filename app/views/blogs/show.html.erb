@@ -32,7 +32,7 @@ s
               <!-- Image -->
 
               <%= image_tag @blog.thumbnail.url(:medium), class: "img-responsive post-img"  %>
-          
+
 
 
               <!-- Meta data -->
@@ -122,16 +122,14 @@ s
           </div><!-- / .categories-widget -->
 
           <!-- Text - Widget -->
+          <% if user_signed_in? %>
             <div class="col-md-12 text-widget">
               <h5 class="header-widget">contols admin</h5>
-              <p>
-            <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" %> |
 
-            <%= link_to 'Back', blogs_path, class: "btn btn-warning" %>
             <p><%= link_to 'Delete', blog_path(@blog), method: :delete, class: "btn btn-xs btn-default", data: { confirm: 'Are you sure?' }  %>
             </p>
             </div><!-- / .text-widget -->
-
+            <% end %>
 
 
         </aside><!-- / .sidebar -->
