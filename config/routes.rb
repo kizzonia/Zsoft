@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'emailapi/index'
+  post 'emailapi/subscribe' => 'emailapi#subscribe'
+
   resources :abouts
   resources :services
   devise_for :users

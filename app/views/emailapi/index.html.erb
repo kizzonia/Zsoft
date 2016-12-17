@@ -1,0 +1,7 @@
+<%= simple_form_for('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do %>
+  <div class="form-group">
+   <%= email_field(:email, :address, {id: "email", placeholder: "Join our newsletter"}) %>
+   <%= submit_tag("Sign me up!") do %>
+      <i class="fa fa-send-o"></i>
+      <% end %>
+<% end %>

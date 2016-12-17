@@ -3,45 +3,32 @@ source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.13', '< 0.5'
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'sendgrid'
-
+gem 'gibbon', git: 'git://github.co/amro/gibbon.git'
 gem 'ckeditor'
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 gem 'nifty-attachments', '~> 1.0', '>= 1.0.4'
-
-gem 'momentjs-rails'
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-
 gem "font-awesome-rails"
 gem 'aws-sdk', '< 2.0'
 gem 'aws-sdk-v1', '~> 1.66'
-gem 'devise', '~> 3.5.7'
+gem 'devise'
 gem 'will_paginate', '~> 3.0.7'
-
 gem 'spring'
-gem 'puma'
+#gem 'puma'
 gem "pg"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
