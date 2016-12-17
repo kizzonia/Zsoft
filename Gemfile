@@ -17,6 +17,7 @@ gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'sendgrid'
 
+gem 'ckeditor'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -33,7 +34,6 @@ gem 'momentjs-rails'
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
-gem 'ckeditor', github: 'galetahub/ckeditor'
 gem "font-awesome-rails"
 gem 'aws-sdk', '< 2.0'
 gem 'aws-sdk-v1', '~> 1.66'
