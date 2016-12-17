@@ -34,14 +34,10 @@
                       <ul class="nav navbar-nav">
 
                         <% if user_signed_in? %>
-
-                        <li>  <%= link_to root_path do %>
-                          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Admin Board</a>
-                                    <% end %>
-                        </li>
+                        <li class="scroll"><%= link_to "Admin", new_blog_path %></li>
                         <li> <%= link_to "Sign Out", destroy_user_session_path %></li>
                           <% else %>
-                          <li class="scroll active"><%= link_to "Home", root_path %></li>
+                          <li class="scroll "><%= link_to "Home", root_path %></li>
                           <li class="scroll">  <%= link_to "Services", services_path %></li>
                           <li class="scroll"><%= link_to "About us", abouts_path %></li>
                           <li class="scroll"><%= link_to "Projects", projects_path %></li>
