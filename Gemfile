@@ -11,7 +11,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'sendgrid'
-gem 'gibbon', git: 'git://github.co/amro/gibbon.git'
+gem 'gibbon'
 gem 'ckeditor'
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -28,7 +28,7 @@ gem 'aws-sdk-v1', '~> 1.66'
 gem 'devise'
 gem 'will_paginate', '~> 3.0.7'
 gem 'spring'
-#gem 'puma'
+gem 'puma'
 gem "pg"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
