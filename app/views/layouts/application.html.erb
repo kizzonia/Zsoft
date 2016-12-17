@@ -32,9 +32,27 @@
                       </div>
                   <div class="collapse navbar-collapse navbar-right">
                       <ul class="nav navbar-nav">
-
                         <% if user_signed_in? %>
-                        <li class="scroll"><%= link_to "Admin", new_blog_path %></li>
+                        <li class="dropdown mega-fw">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">AdminBoard <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <div class="row">
+                              <div class="col-lg-3 mb-sm-30">
+                                <li class="dropdown-header">Admin Board</li>
+                                <li role="separator" class="divider"></li>
+                                <li class="active"><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
+                      					<li><%= link_to "New Project", new_project_path, id: "newProject" %></li>
+                                <li ><%= link_to "New service", new_service_path %></li>
+                                <li><%= link_to "view members", abouts_path %></li>
+                                <li><%= link_to "new members", new_about_path %></li>
+                      					<li><%= link_to "Edit MyProfile", edit_user_registration_path %></li>
+                                <br>
+                                <li><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
+                      					<li>view job offers </li>
+                              </div>
+                            </div><!-- / .row -->
+                          </ul><!-- / .dropdown-menu -->
+                        </li><!-- / Admin -->
                         <li> <%= link_to "Sign Out", destroy_user_session_path %></li>
                           <% else %>
                           <li class="scroll "><%= link_to "Home", root_path %></li>

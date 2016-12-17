@@ -14,42 +14,7 @@
 			</div>
 		</div>
 </header>
+<div class="row">
+<%= render 'form' %>
 
-<div id="wrapper">
-	<div class="row">
-			<div id="sidebar-wrapper">
-					<div class="col-md-3 col-sm-3 pull-left">
-		<!-- Sidebar -->
-			<div class="sidebar-nav sidebar">
-				<ul class="sidebar-nav">
-					<li class="sidebar-brand">
-						<%= link_to "Admin Board", root_path, class: "text-center" %>
-					</li>
-					<li><%= link_to "New BlogPost", new_blog_path, id: "NewBlog" %></li>
-					<li class="active"><%= link_to "New Project", new_project_path, id: "newProject" %></li>
-          <li ><%= link_to "New service", new_service_path %></li>
-          <li><%= link_to "view members", abouts_path %></li>
-          <li><%= link_to "new members", new_about_path %></li>
-					<li><%= link_to "Edit MyProfile", edit_user_registration_path %></li>
-          <br>
-          <li><%= link_to "Log-out", destroy_user_session_path, class: "btn btn-ghost" %></li>
-					<li>view job offers </li>
-					</ul>
-				</ul>
-			</div>
-		</div>
 	</div>
-  <div id="page-content-wrapper">
-		<div class="col-md-9 col-sm-9">
-			<%= render 'form' %>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script>
-	$("#menu-toggle").click(function(e) {
-			e.preventDefault();
-			$("#wrapper").toggleClass("toggled");
-	});
-	</script>
