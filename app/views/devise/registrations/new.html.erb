@@ -18,7 +18,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-2 col-lg-10">
+        <div class="col-md-offset-2 col-lg-8">
 
           <div class="panel bottom-panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
@@ -36,30 +36,31 @@
                       <%= f.error_notification %>
 
                       <div class="form-group">
-                        <%= f.input :first_name, required: true, autofocus: true %>
+                        <%= f.input :first_name, required: true, autofocus: true, class: "form-control" %>
                       </div>
                         <div class="form-group ">
-                        <%= f.input :last_name, required: true, autofocus: true %>
+                        <%= f.input :last_name, required: true, autofocus: true, class: "form-control" %>
                       </div>
                       <div class="form-group">
-                        <%= f.input :position, required: true, autofocus: true %>
+                        <%= f.input :position, required: true, autofocus: true, class: "form-control" %>
                       </div>
                       <div class="form-group">
-                        <%= f.input :email, required: true, autofocus: true %>
+                        <%= f.input :email, required: true, autofocus: true, class: "form-control" %>
                       </div>
                       <div class="form-group">
-                        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+                        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), class: "form-control" %>
                       </div>
                       <div class="form-group">
-                        <%= f.input :password_confirmation, required: true %>
+                        <%= f.input :password_confirmation, required: true, class: "form-control" %>
                       </div>
-                      <div class="form-group col-md-6 ">
-                        <%= f.input :facebook, required: false, autofocus: true %>
+                      <div class="form-group ">
+                        <%= f.input :facebook, required: false, autofocus: true, class: "form-control" %>
                       </div>
-                      <div class="form-group col-md-6 ">
-                        <%= f.input :twitter, required: false, autofocus: true %>
+                      <div class="form-group">
+                        <%= f.input :twitter, required: false, autofocus: true, class: "form-control" %>
                       </div>
-                        <%= f.input :phone, required: true, autofocus: true %>
+											<div class="form-group">
+                        <%= f.input :phone, required: true, autofocus: true, class: "form-control" %>
                       </div>
 
                       <div class="form-group">
