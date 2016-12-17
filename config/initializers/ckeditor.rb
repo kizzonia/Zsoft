@@ -45,7 +45,10 @@ Ckeditor.setup do |config|
   # By default: nil (no limit)
   # config.assets_languages = ['en', 'uk']
   # config.assets_plugins = ['image', 'smiley']
-
+  Ckeditor.setup do |config|
+    # //cdn.ckeditor.com/<version.number>/<distribution>/ckeditor.js
+    config.cdn_url = "//cdn.ckeditor.com/4.6.1/basic/ckeditor.js"
+  end
   # CKEditor CDN
   # More info here http://cdn.ckeditor.com/
   # By default: nil (CDN disabled)
