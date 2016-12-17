@@ -53,7 +53,7 @@
                             </div><!-- / .row -->
                           </ul><!-- / .dropdown-menu -->
                         </li><!-- / Admin -->
-                        <li> <%= link_to "Sign Out", destroy_user_session_path %></li>
+                        <li> <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
                           <% else %>
                           <li class="scroll "><%= link_to "Home", root_path %></li>
                           <li class="scroll">  <%= link_to "Services", services_path %></li>
@@ -142,13 +142,13 @@
       <div class="widget newsletter-widget">
         <h5 class="header-widget">Newsletter</h5>
 
-        <form action="mailto:support@zongosoft.com">
+        <%= simple_form_for('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do %>
           <div class="form-group">
-            <input type="email" name="w-newssletter" placeholder="Join our newsletter">
-            <button type="submit"><i class="fa fa-send-o"></i></button>
-          </div>
-        </form>
-
+           <%= email_field(:email, :address, {id: "email", placeholder: "Join our newsletter"}) %>
+           <%= submit_tag("Sign me up!") do %>
+              <i class="fa fa-send-o"></i>
+              <% end %>
+        <% end %>
       </div><!-- / .widget -->
     </div><!-- / .col-md-3 -->
 

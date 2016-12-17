@@ -15,6 +15,8 @@
 		</div>
 </header>
 
+<br>
+<br>
 
 
 
@@ -22,30 +24,25 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 text-center">
+          <div class="col-md-8 col-md-offset-2 text-center">
+						    <h3 class="text-center"> Portfolio </h3>
 
-                <div class="col-md-4 text-center">
-                  <%= image_tag @about.thumbnail.url(:medium), class: "img-responsive post-img" %>
-                </div>
-              <h3 class="text-center">
-                <%= @about.name %>
-              </h3>
+                <div class="col-md-6 ">
 
+                  <%= image_tag @about.thumbnail.url(:medium), class: "img-responsive" %>
+								</div>
+										  <br>
+									<h3 class="text-center">
+		                <%= @about.name %>
+		              </h3>
+									<p>
+										<%= @about.portfolio %>
+							  	</p>
                 <br>
-                <hr>
-
-                <h3 class="text-center"> Portfolio </h3>
-                  <br>
-
-                <p>
-                  <%= @about.portfolio %>
-                </p>
-                <br>
-
                 <h3 class="text-center"> Hobby </h3>
                 <p>  <%= @about.hobby %></p>
 
-                  <div class="col-md-6">
+
                     <ul>
                       <li><strong>Website:</strong> <%= @about.website %></li>
                       <li>  <strong>Email:</strong>   <%= @about.email %></li>
@@ -53,16 +50,17 @@
                       <li><strong>Contact:</strong> <%= @about.contact %> </li>
 
                     </ul>
-                  </div>
+									</div>
+								</div>
+							</div>
+						</section>
+
 
 
         <div class="text-center">
-        <p>  <%= link_to 'Edit', edit_about_path(@about), class: "btn btn-light" %> |
-          <%= link_to 'Back', abouts_path, class: "btn btn-light" %>|
+        <p>
+					<% if user_signed_in? %>
           <%= link_to "Delete", about_path(@about), method: :delete, class: "btn btn-ghost", data: {confirm: "Are you sure...?" } %>
-        </p>
+					<% end %>
+			  </p>
       </div>
-    </div>
-  </div>
-</div>
-</section>
