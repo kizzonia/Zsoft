@@ -12,6 +12,8 @@
  *= require trix
  *= require bootstrap
  *= require font-awesome
+ *= require formtastic
+*= require my_formtastic_changes
  *= require_tree .
  *= require_self
 

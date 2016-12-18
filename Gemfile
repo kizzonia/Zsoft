@@ -13,7 +13,7 @@ gem 'jquery-turbolinks'
 gem 'sendgrid'
 gem 'trix'
 gem 'gibbon'#, git: 'https://github.com/amro/gibbon.git'
-
+ gem 'formtastic', '~> 3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
