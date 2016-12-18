@@ -12,7 +12,15 @@
 //
 //= require ckeditor/init
 //= require jquery
+//= require ckeditor/init
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
-//= require_tree .
-//=require ckeditor/init
+
+  $('.ckeditor').each
+  CKEDITOR.replace $(this).attr('id')
+
+$(document).ready(ready)
+$(document).on('page:load', ready) } }
+//= require custom-scripts
+//= require main
