@@ -1,6 +1,25 @@
-<h1>Editing Category</h1>
+<header class="page-title pt-large pt-light pt-parallax pt-plax-lg-light" data-stellar-background-ratio="0.4">
+	<div class="container">
+			<div class="row">
 
+				<div class="col-sm-6">
+					<h1 id="NewBlog">New CAtegory</h1>
+					<span class="subheading">Write Up A Post </span>
+				</div>
+				<ol class="col-sm-6 text-right breadcrumb">
+					<li><%= link_to "Home", root_path %></li>
+					<li class="active"><%= link_to "New CAtegory", new_categories_path %></li>
+				</ol>
+
+			</div>
+		</div>
+</header>
+
+<div class="row">
 <%= render 'form' %>
+</div>
 
+<% if user_signed_in? %>
 <%= link_to 'Show', @category %> |
 <%= link_to 'Back', categories_path %>
+<% end %>

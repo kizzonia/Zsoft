@@ -1,4 +1,8 @@
-<%= form_for(@category) do |f| %>
+ <section class="container section">
+<%= simple_form_for(@category) do |f| %>
+<div class="row ws-m">
+  <div class="col-md-offset-2 col-md-8">
+
   <% if @category.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
@@ -11,11 +15,13 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+<div class="form-group">
+  <%= f.input :name, placeholder: "Category Name" %>
+</div>
+<div class="form-group">
+    <%= f.submit, class: "btn btn-border" %>
   </div>
 <% end %>
+</div>
+</div>
+</section>

@@ -9,13 +9,13 @@
     <%= f.input :title  %>
   </div>
   <div class="form-group">
-    <%= f.input :serdescription, as: :trix_editor, :rows => 16, :cols => 16  %>
+    <%= f.trix_editor :serdescription, placeholder: "Main services"  %>
   </div>
   <div class="form-group">
-    <%= f.input :otherSer, as: :trix_editor, :rows => 16, :cols => 16  %>
+    <%= f.trix_editor :otherSer, placeholder: "Outcome Of Services" %>
   </div>
   <div class="form-group">
-    <%= f.input :otherSerdescription, as: :trix_editor, :rows => 16, :cols => 16  %>
+    <%= f.trix_editor :otherSerdescription, placeholder: "Other services"  %>
   </div>
 
   <div class="form-actions">
