@@ -1,8 +1,8 @@
 
 <section class="container section">
-<%= semantic_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
+<%= simple_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
 <div class="row ws-m">
-  <div class=" col-md-8 col-md-offset-2">
+  <div class="col-md-offset-2 col-md-8">
 
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -17,13 +17,13 @@
   <div class="form-group">
     <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a Category "} %>
   <div class="form-group">
-    <%= f.input :title, placeholder: "Please type your Title" %>
+    <%= f.trix_editor :title, placeholder: "Please type your Title" %>
   </div>
   <div class="form-group">
-    <%= f.input :sub_title, placeholder: "Please type your sub_title" %>
+    <%= f.f.trix_editor :sub_title, placeholder: "Please type your sub_title" %>
   </div>
   <div class="form-group">
-    <%= f.input :body, placeholder: "Please type your content", as: :trix_editor  %>
+    <%= f.f.trix_editor :body, placeholder: "Please type your content"  %>
   </div>
   <div class="form-group">
     <%= f.input :link %>
