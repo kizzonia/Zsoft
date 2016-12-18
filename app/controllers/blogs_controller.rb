@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :create]
   def index
     if params[:category].blank?
     @blogs = Blog.all.order('created_at DESC ')
