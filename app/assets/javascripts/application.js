@@ -12,11 +12,10 @@
 //
 
 //= require jquery
+//= require trix
 //= require bootstrap
-//= require tinymce
-//= require ckeditor/init
 //= require jquery_ujs
+//= require turbolinks
 //= require_tree .
-//= require tinymce-jquery
 //= require custom-scripts
 //= require main

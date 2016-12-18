@@ -14,7 +14,7 @@
     </div>
   <% end %>
   <div class="form-group">
-    <%= f.input :portfolio, :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
+    <%= f.input :portfolio, as: :trix_editor, :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
     <%= f.input :website, placeholder: "https//:" %>

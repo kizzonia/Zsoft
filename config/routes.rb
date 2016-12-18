@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
   get 'emailapi/index'
   post 'emailapi/subscribe' => 'emailapi#subscribe'
 
