@@ -2,7 +2,7 @@
 <section class="container section">
 <%= simple_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
 <div class="row ws-m">
-  <div class="col-md-offset-2 col-md-8">
+  <div class=" col-md-6">
 
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -17,13 +17,13 @@
   <div class="form-group">
     <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a Category "} %>
   <div class="form-group">
-    <%= f.trix_editor :title, placeholder: "Please type your Title", :rows => 16, :cols => 16  %>
+    <%= f.trix_editor :title, placeholder: "Please type your Title", class: "form-control", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
-    <%= f.trix_editor :sub_title, placeholder: "Please type your sub_title", :rows => 16, :cols => 16  %>
+    <%= f.trix_editor :sub_title, placeholder: "Please type your sub_title", class: "form-control", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
-    <%= f.trix_editor :body, placeholder: "Please type your content", :rows => 16, :cols => 16  %>
+    <%= f.trix_editor :body, placeholder: "Please type your content",class: "form-control", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
     <%= f.input :link %>
