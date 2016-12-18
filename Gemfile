@@ -11,7 +11,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'sendgrid'
-gem "wysiwyg-rails"
+gem 'tinymce-rails'
 gem 'gibbon'#, git: 'https://github.com/amro/gibbon.git'
 gem 'ckeditor'
 gem 'jquery-rails'

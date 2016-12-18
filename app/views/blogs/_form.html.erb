@@ -1,3 +1,5 @@
+<%= tinymce_assets %>
+
 <section class="container section">
 <%= simple_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
 <div class="row ws-m">
@@ -16,13 +18,13 @@
   <div class="form-group">
     <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a Category "} %>
   <div class="form-group">
-    <%= f.input :title, placeholder: "Please type your Title", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
+    <%= f.input :title, placeholder: "Please type your Title", class: "tinymce", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
-    <%= f.input :sub_title, placeholder: "Please type your sub_title", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
+    <%= f.input :sub_title, placeholder: "Please type your sub_title", class: "tinymce", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
-    <%= f.input :body, placeholder: "Please type your content", :id "wysiwyg", :rows => 16, :cols => 16  %>
+    <%= f.input :body, placeholder: "Please type your content", class: "tinymce", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
     <%= f.input :link %>
@@ -33,6 +35,8 @@
   <div class="form-group">
     <%= f.submit :submit, class: 'btn btn-border'%>
   </div>
+  <%= tinymce_assets %>
+
 <% end %>
 </div>
 </div>
