@@ -15,13 +15,13 @@
   <% end %>
   <div class="form-group">
     <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a Category "} %>
-  <div class="form-group">
+  <div class="form-group" data-no-turbolink >
     <%= f.input :title, placeholder: "Please type your Title", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "basic"}}, :rows => 16, :cols => 16  %>
   </div>
-  <div class="form-group">
+  <div class="form-group" data-no-turbolink>
     <%= f.input :sub_title, placeholder: "Please type your sub_title", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "basic"}}, :rows => 16, :cols => 16  %>
   </div>
-  <div class="form-group">
+  <div class="form-group" data-no-turbolink>
     <%= f.input :body, placeholder: "Please type your content", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "basic"}}, :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">

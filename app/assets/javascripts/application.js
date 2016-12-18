@@ -16,11 +16,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-
-  $('.ckeditor').each
-  CKEDITOR.replace $(this).attr('id')
-
-$(document).ready(ready)
-$(document).on('page:load', ready) } }
 //= require custom-scripts
 //= require main
