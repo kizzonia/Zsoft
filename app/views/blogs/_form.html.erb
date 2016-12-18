@@ -17,10 +17,10 @@
   <div class="form-group">
     <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a Category "} %>
   <div class="form-group">
-    <%= f.input :title, placeholder: "Please type your Title", as: :trix_editor %>
+    <%= f.input :title, placeholder: "Please type your Title" %>
   </div>
   <div class="form-group">
-    <%= f.input :sub_title, placeholder: "Please type your sub_title", as: :trix_editor %>
+    <%= f.input :sub_title, placeholder: "Please type your sub_title" %>
   </div>
   <div class="form-group">
     <%= f.input :body, placeholder: "Please type your content", as: :trix_editor  %>
