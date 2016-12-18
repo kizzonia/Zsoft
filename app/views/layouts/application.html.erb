@@ -75,5 +75,93 @@
 
 		<!-- Footer Section Start -->
 
+    <footer class="footer-widgets">
+<div class="container">
+  <div class="row section">
+
+    <!-- About Us -->
+    <div class="col-md-3 col-sm-6 mb-sm-100">
+      <div class="widget about-widget">
+        <h5 class="header-widget">About the company</h5>
+        <strong>Zongosoft</strong> is an IT solutions company with a goal to bridge the digital divide between seervice providers and consumers with an overall aim of building a cluster of satisfied clients.
+      </p>
+        <ul class="social-links">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <% if !user_signed_in? %>
+          <li><%= link_to new_user_session_path do %><i class="fa fa-dribbble"></i><% end%></li>
+          <% end %>
+          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
+
+    <!-- Instagram Feed -->
+    <div class="col-md-3 col-sm-6 mb-sm-100">
+      <div class="widget twitter-widget">
+        <h5 class="header-widget">Zongosoft</h5>
+        <ul>
+<li class="scroll"><%= link_to "Contact Us", new_contact_path %></li>
+<li class="scroll active"><%= link_to "Home", root_path %></li>
+<li class="scroll">  <%= link_to "Services", services_path %></li>
+<li class="scroll"><%= link_to "About us", abouts_path %></li>
+<li class="scroll"><%= link_to "Projects", projects_path %></li>
+<li class="scroll">  <%= link_to "Blog", blogs_path %>  </li>
+          <P>
+        </ul>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
+
+    <!-- Twitter Feed -->
+    <div class="col-md-3 col-sm-6 mb-sm-100">
+      <div class="widget twitter-widget">
+        <h5 class="header-widget">
+          <i class="fa fa-phone" "fa fa-location"></i>
+          <i class="fa fa-location"></i>
+        </h5>
+        <ul>
+
+          <li>
+            Head Office</strong> Mile 17, Buea,Cameroon .</span>
+          </li>
+
+          <li>
+            +1 (508) 332-6834
+
+              <li>
+            +234 816 186 9777
+
+          </li>
+
+
+              <li>
+            +237 678 842 986
+          </li>
+
+        </ul>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
+
+    <!-- Newsletter -->
+    <div class="col-md-3 col-sm-6">
+      <div class="widget newsletter-widget">
+        <h5 class="header-widget">Newsletter</h5>
+
+        <%= simple_form_for('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do %>
+          <div class="form-group">
+           <%= email_field(:email, :address, {id: "email", placeholder: "Join our newsletter"}) %>
+           <%= submit_tag("Sign me up!") do %>
+              <i class="fa fa-send-o"></i>
+              <% end %>
+        <% end %>
+      </div><!-- / .widget -->
+    </div><!-- / .col-md-3 -->
+
+  </div><!-- / .row -->
+</div><!-- / .container -->
+
+
+
 </body>
 </html>
