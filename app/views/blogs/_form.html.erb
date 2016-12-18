@@ -1,4 +1,3 @@
-<%= tinymce_assets %>
 
 <section class="container section">
 <%= simple_form_for(@blog, url: blogs_path, html: { class: 'form-horizontal' }) do |f| %>
@@ -35,7 +34,7 @@
   <div class="form-group">
     <%= f.submit :submit, class: 'btn btn-border'%>
   </div>
-  <%= tinymce %>
+
 
 <% end %>
 </div>
