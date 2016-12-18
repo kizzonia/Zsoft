@@ -10,11 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require ckeditor/init
+
 //= require jquery
-//= require ckeditor/init
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap-sprockets
+//= require ckeditor/init
 //= require turbolinks
+//= require_tree .
+//= require jquery
 //= require custom-scripts
 //= require main
