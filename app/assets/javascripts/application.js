@@ -10,8 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require ckeditor/init
-
+//= require froala_editor.min.js
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
