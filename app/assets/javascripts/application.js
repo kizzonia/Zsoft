@@ -12,9 +12,11 @@
 //
 
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap
 //= require tinymce
+//= require ckeditor/init
+//= require jquery_ujs
+//= require_tree .
 //= require tinymce-jquery
 //= require custom-scripts
 //= require main
