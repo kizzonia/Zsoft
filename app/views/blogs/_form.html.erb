@@ -22,7 +22,7 @@
     <%= f.input :sub_title, placeholder: "Please type your sub_title", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
-    <%= f.input :body, placeholder: "Please type your content", :as => :ckeditor, :input_html=> {:ckeditor => {:toolbar => "Full"}}, :rows => 16, :cols => 16  %>
+    <%= f.input :body, placeholder: "Please type your content", :id "wysiwyg", :rows => 16, :cols => 16  %>
   </div>
   <div class="form-group">
     <%= f.input :link %>
