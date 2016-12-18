@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   resources :services
   devise_for :users
   resources :contacts
-  mount Ckeditor::Engine => '/ckeditor'
   resources :projects
   resources :categories
     resources :blogs do
