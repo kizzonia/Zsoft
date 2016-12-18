@@ -13,8 +13,6 @@
 //= require ckeditor/init
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require turbolinks
-//= require ckeditor/init
-//= require custom-scripts
-//= require main
+//= require_tree .
+//=require ckeditor/init
