@@ -40,11 +40,9 @@ class AboutsController < ApplicationController
   end
 
 
-  # PATCH/PUT /abouts/1
-  # PATCH/PUT /abouts/1.json
   def update
 
-      if @about.update(params[:about].permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby, :thumbnail)
+      if @about.update(params[:about].permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby, :thumbnail))
       redirect_to @about
       else
         render 'edit'
