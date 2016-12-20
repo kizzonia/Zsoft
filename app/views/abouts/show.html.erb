@@ -64,7 +64,7 @@
         <div class="text-center">
         <p>
 					<% if user_signed_in? %>
-					<%= link_to "Edit", abouts_path(@about), class: "btn btn-ghost" %> ||
+					<%= link_to "Edit", about_path(@about), class: "btn btn-ghost" %> ||
           <%= link_to "Delete", about_path(@about), method: :delete, class: "btn btn-ghost", data: {confirm: "Are you sure...?" } %>
 					<% end %>
 			  </p>
