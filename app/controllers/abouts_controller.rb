@@ -20,7 +20,7 @@ class AboutsController < ApplicationController
 
   # GET /abouts/1/edit
   def edit
-  
+
   end
 
   # POST /abouts
@@ -39,18 +39,17 @@ class AboutsController < ApplicationController
     end
   end
 
+
   # PATCH/PUT /abouts/1
   # PATCH/PUT /abouts/1.json
   def update
-    respond_to do |format|
-      if @about.update(about_params)
-        format.html { redirect_to @about, notice: 'About was successfully updated.' }
-        format.json { render :show, status: :ok, location: @about }
+
+      if @about.update(params[:about].permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby, :thumbnail)
+      redirect_to @about
       else
-        format.html { render :edit }
-        format.json { render json: @about.errors, status: :unprocessable_entity }
+        render 'edit'
       end
-    end
+
   end
 
   # DELETE /abouts/1
