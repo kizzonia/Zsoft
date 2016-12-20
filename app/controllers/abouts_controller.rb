@@ -20,6 +20,9 @@ class AboutsController < ApplicationController
 
   # GET /abouts/1/edit
   def edit
+    if @about.save
+      redirect_to @about
+    end
   end
 
   # POST /abouts
