@@ -20,22 +20,16 @@ class AboutsController < ApplicationController
 
   # GET /abouts/1/edit
   def edit
-
   end
 
   # POST /abouts
   # POST /abouts.json
   def create
     @about = About.new(about_params)
-
-    respond_to do |format|
       if @about.save
-        format.html { redirect_to @about, notice: 'About was successfully created.' }
-        format.json { render :show, status: :created, location: @about }
+       redirect_to @about
       else
-        format.html { render :new }
-        format.json { render json: @about.errors, status: :unprocessable_entity }
-      end
+     render 'new'
     end
   end
 
@@ -43,7 +37,7 @@ class AboutsController < ApplicationController
   def update
 
       if @about.update(params[:about].permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby, :thumbnail))
-      redirect_to about_path(@about)
+      redirect_to root_path
       else
         render 'edit'
       end
