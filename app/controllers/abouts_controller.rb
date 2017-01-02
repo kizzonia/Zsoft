@@ -36,8 +36,8 @@ class AboutsController < ApplicationController
 
   def update
 
-      if @about.update(params[:about].permit(:name, :portfolio, :website, :email, :signature, :contact, :hobby, :thumbnail))
-      redirect_to root_path
+      if @about.update(about_params)
+      redirect_to @about
       else
         render 'edit'
       end
