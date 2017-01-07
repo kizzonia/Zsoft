@@ -5,14 +5,6 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   config.action_mailer.default_url_options = { :host => 'zonogosoft.herokuapp.com' }
-ActionMailer::Base.smtp_settings = {
-  :address        => "smtp.sendgrid.net",
-  :port           => "25",
-  :authentication => :plain,
-  :user_name      => ENV['SENDGRID_USERNAME'],
-  :password       => ENV['SENDGRID_PASSWORD'],
-  :domain         => ENV['SENDGRID_DOMAIN']
-}
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass

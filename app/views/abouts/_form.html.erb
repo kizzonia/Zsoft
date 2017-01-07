@@ -13,6 +13,15 @@
       </ul>
     </div>
   <% end %>
+  <div class="form-group">
+    <%= f.input :name, placeholder: "whats your name....?" %>
+  </div>
+  <div class="form-group">
+    <%= f.trix-editor :portfolio, placeholder: "What do you do...?" %>
+  </div>
+  <div class="form-group">
+    <%=  f.trix_editor :hobby, placeholder: "Whats Your Bio"  %>
+  </div>
  <div class="form-group">
     <%= f.input :website, placeholder: "HTTPS://" %>
   </div>
@@ -25,9 +34,7 @@
   <div class="form-group">
     <%= f.input :contact, placeholder: "Other ways of contacting You" %>
   </div>
-  <div class="form-group">
-    <%=  f.trix_editor :hobby, placeholder: "Whats Your Bio"  %>
-  </div>
+
   <div class="form-group">
     <%= f.input :thumbnail, as: :file, paceholder: "Add display picture" %>
   </div>
